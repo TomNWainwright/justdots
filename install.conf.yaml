@@ -1,3 +1,30 @@
-- clean: []
-- link: {}
-- shell: []
+--- 
+- 
+  clean: [ /home/tom/ ]
+- 
+  defaults: 
+    link: 
+      create: true
+      relink: true
+      force: true
+- 
+  link: 
+    ~/.bashrc: bash/bashrc
+    ~/.profile: bash/profile
+    ~/.config/rofi: config/rofi
+    ~/.config/doublecmd: config/doublecmd
+    ~/.config/geany: config/geany
+    ~/.config/mimeapps.list: config/mimeapps.list
+
+    ~/.config/libreoffice: config/libreoffice
+    ~/.config/gnome-pie: config/gnome-pie
+    ~/.config/kitty: config/kitty
+    ~/.config/xfce4: config/xfce4
+    ~/.config/Thunar: config/Thunar
+    ~/.config/Mousepad: config/Mousepad
+    ~/.config/xonsh: config/xonsh
+    ~/.config/emelfm2: config/emelfm2
+    ~/.config/google-chrome/Default/Preferences: config/chrome_prefs
+    ~/.config/opera/Preferences: config/opera_prefs
+- 
+  shell: []

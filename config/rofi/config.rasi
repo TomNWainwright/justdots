@@ -1,0 +1,18 @@
+
+
+
+configuration {
+
+
+
+
+ modi: "combi,window,drun,run,keys";
+	show-icons: true;
+ combi-modi: "window,drun";
+
+	theme: "/home/tom/.config/rofi/myarthur.rasi";
+
+
+sidebar-mode: true;
+
+}
