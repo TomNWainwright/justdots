@@ -1,0 +1,13 @@
+
+
+
+PATH=""
+
+
+while read path; do
+  PATH=$PATH:$path
+done </home/tom/Share/Config/environment/system_path
+
+GOROOT="/home/tom/Share/Config/lib/go/"
+
+
