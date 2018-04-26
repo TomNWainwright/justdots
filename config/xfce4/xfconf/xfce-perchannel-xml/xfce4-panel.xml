@@ -35,6 +35,7 @@
       <property name="names-visible" type="array">
         <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="task manager"/>
+        <value type="string" value="geany"/>
         <value type="string" value="thunar"/>
       </property>
     </property>

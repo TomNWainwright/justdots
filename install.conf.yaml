@@ -9,8 +9,9 @@
       force: true
 - 
   link: 
-    ~/.bashrc: bash/bashrc
-    ~/.profile: bash/profile
+    ~/.gitconfig: gitconfig
+    ~/.bashrc: shells/bash/bashrc
+    ~/.profile: shells/bash/profile
     ~/.config/rofi: config/rofi
     ~/.config/doublecmd: config/doublecmd
     ~/.config/geany: config/geany
@@ -22,9 +23,10 @@
     ~/.config/xfce4: config/xfce4
     ~/.config/Thunar: config/Thunar
     ~/.config/Mousepad: config/Mousepad
-    ~/.config/xonsh: config/xonsh
+    ~/.config/xonsh: shells/xonsh
     ~/.config/emelfm2: config/emelfm2
     ~/.config/google-chrome/Default/Preferences: config/chrome_prefs
     ~/.config/opera/Preferences: config/opera_prefs
+    ~/.jupyter: config/jupyter
 - 
   shell: []

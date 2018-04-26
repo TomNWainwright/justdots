@@ -1,13 +1,29 @@
 
 
 
-PATH=""
+. /home/tom/.nix-profile/etc/profile.d/nix.sh
+. /home/tom/dotfiles/bash/environment
+. /home/tom/dotfiles/bash/fzy
+. /home/tom/dotfiles/bash/aliases
 
 
-while read path; do
-  PATH=$PATH:$path
-done </home/tom/Share/Config/environment/system_path
-
-GOROOT="/home/tom/Share/Config/lib/go/"
+setxkbmap gb
 
 
+
+
+
+#. /home/tom/dotfiles/bash/rerun
+
+HISTCONTROL=ignoredups:ignorespace
+shopt -s histappend
+HISTSIZE=1000
+HISTFILESIZE=2000
+shopt -s checkwinsize
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u:::\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u:::! \w\a\]$PS1"
+test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
