@@ -2,9 +2,9 @@
 
 
 . /home/tom/.nix-profile/etc/profile.d/nix.sh
-. /home/tom/dotfiles/bash/environment
-. /home/tom/dotfiles/bash/fzy
-. /home/tom/dotfiles/bash/aliases
+. /home/tom/dotfiles/shells/bash/lib/environment
+. /home/tom/dotfiles/shells/bash/lib/fzy
+. /home/tom/dotfiles/shells/bash/lib/aliases
 
 
 setxkbmap gb
