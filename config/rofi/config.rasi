@@ -8,7 +8,7 @@ configuration {
 
  modi: "combi,window,drun,run,keys";
 	show-icons: true;
- combi-modi: "window,drun";
+ combi-modi: "window,drun,run";
 
 	theme: "/home/tom/.config/rofi/myarthur.rasi";
 
