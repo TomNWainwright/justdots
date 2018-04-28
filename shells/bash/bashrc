@@ -1,7 +1,7 @@
 
 
 
-. /home/tom/.nix-profile/etc/profile.d/nix.sh
+. /home/.nix-profile/etc/profile.d/nix.sh
 
 
 
@@ -9,9 +9,9 @@ setxkbmap gb
 
 
 
-. /home/tom/dotfiles/shells/bash/lib/aliases
-. /home/tom/dotfiles/shells/bash/lib/environment
-. /home/tom/dotfiles/shells/bash/lib/fzy
+. /home/dotfiles/shells/bash/lib/aliases
+. /home/dotfiles/shells/bash/lib/environment
+. /home/dotfiles/shells/bash/lib/fzy
 xcape_single
 
 
