@@ -2,24 +2,22 @@
 
 
 . /home/tom/.nix-profile/etc/profile.d/nix.sh
-. /home/tom/dotfiles/shells/bash/lib/environment
-. /home/tom/dotfiles/shells/bash/lib/fzy
-. /home/tom/dotfiles/shells/bash/lib/aliases
+
 
 
 setxkbmap gb
 
 
 
+. /home/tom/dotfiles/shells/bash/lib/aliases
+. /home/tom/dotfiles/shells/bash/lib/environment
+. /home/tom/dotfiles/shells/bash/lib/fzy
+xcape_single
 
-
-#. /home/tom/dotfiles/bash/rerun
 
 HISTCONTROL=ignoredups:ignorespace
-shopt -s histappend
 HISTSIZE=1000
 HISTFILESIZE=2000
-shopt -s checkwinsize
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
@@ -27,3 +25,11 @@ fi
 PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u:::\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u:::! \w\a\]$PS1"
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+
+export GOROOT=$HOME/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/gocode
+export PATH=$PATH:$GOPATH/bin
+if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        source /etc/profile.d/vte.sh
+fi

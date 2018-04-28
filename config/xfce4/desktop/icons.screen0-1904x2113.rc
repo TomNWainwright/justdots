@@ -1,33 +1,33 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[ROOT-A]
-row=8
+[4.1 KB Volume]
+row=0
 col=0
 
-[4.1 KB Volume]
-row=7
+[433 MB Volume]
+row=2
 col=0
+
+[74743dbc-f8b3-48d2-b0f4-068a514e8228]
+row=3
+col=1
+
+[6107-4EB4]
+row=0
+col=1
 
 [48 MB Volume]
 row=4
 col=0
 
-[433 MB Volume]
-row=3
-col=0
-
-[74743dbc-f8b3-48d2-b0f4-068a514e8228]
-row=2
+[ROOT-A]
+row=1
 col=1
 
-[6107-4EB4]
-row=6
+[93072991-719e-4b6f-afbe-5cb809efba46]
+row=8
 col=0
-
-[5b934d91-1842-4d66-bddf-6256388e351a]
-row=3
-col=1
 
 [Trash]
 row=4

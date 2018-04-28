@@ -8,7 +8,13 @@
       relink: true
       force: true
 - 
-  link: 
+  link:
+    ~/.fluxbox: config/fluxbox
+    ~/.config/katepartrc: config/kate/katepartrc
+    ~/.config/konsolerc: config/konsolerc
+    ~/.config/katerc: config/kate/katerc
+    ~/.config/kateschemarc: config/kate/kateschemarc
+    ~/.config/katesyntaxhighlightingrc: config/kate/katesyntaxhighlightingrc
     ~/.gitconfig: gitconfig
     ~/.bashrc: shells/bash/bashrc
     ~/.profile: shells/bash/profile
@@ -16,15 +22,21 @@
     ~/.config/doublecmd: config/doublecmd
     ~/.config/geany: config/geany
     ~/.config/mimeapps.list: config/mimeapps.list
-
+    ~/bins/shellbin/elvish: bins/shellbin/elvish
+    ~/bins/clibin/xcape_single: bins/clibin/xcape_single
     ~/.config/libreoffice: config/libreoffice
     ~/.config/gnome-pie: config/gnome-pie
     ~/.config/kitty: config/kitty
+    ~/.config/fish: config/fish
+    ~/.config/fisherman: config/fisherman
     ~/.config/xfce4: config/xfce4
+    ~/.config/tilda: config/tilda
+    ~/.config/micro: config/micro
     ~/.config/Thunar: config/Thunar
     ~/.config/Mousepad: config/Mousepad
     ~/.config/xonsh: shells/xonsh
     ~/.config/emelfm2: config/emelfm2
+    ~/.config/awesome: config/awesome
     ~/.config/google-chrome/Default/Preferences: config/chrome_prefs
     ~/.config/opera/Preferences: config/opera_prefs
     ~/.jupyter: config/jupyter

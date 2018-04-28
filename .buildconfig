@@ -1,0 +1,10 @@
+[default]
+name=Default
+runtime=host
+config-opts=
+run-opts=
+prefix=/home/tom/.cache/gnome-builder/install/dotfiles/host
+app-id=
+postbuild=
+prebuild=
+default=true

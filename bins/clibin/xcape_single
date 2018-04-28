@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+kill $(ps aux | grep 'xcape -e Shift_L Control_L comma Control_L Control_L grave Alt_L Control_L semicolon Super_L Super_L 1' | awk '{print $2}')
+xcape -e 'Shift_L=Control_L|comma;Control_L=Control_L|grave;Alt_L=Control_L|semicolon;Super_L=Super_L|1'
+
+
