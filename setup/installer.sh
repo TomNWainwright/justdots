@@ -1,15 +1,12 @@
 
-sudo apt-get install -y git
-git clone https://github.com/TomNWainwright/justdots 
-/home/tom/dotfiles/setup/installer.sh
 
 cd /home/tom/dotfiles && ./install 
-cd ..
+cd ~
 
 
 
 
-sudo apt-get install -y    fish apt-transport-https aptitude autoconf autogen automake autotools-dev axel   build-essential bzip2 bzr   deja-dup diffutils  emelfm2 fdupes fontconfig fonts-indic ftp-ssl gawk  libxtst-dev gcc git gnome-logs gnome-pie xfce4-terminal  grep gvfs gzip    less libgl1-mesa-dev m4 make  mime-support nfs-common nmap p7zip p7zip-full perl pkg-config pv rake rar rsync ruby  symlinks tar tlp  unrar unzip wget x11-apps xca xdg-utils  zip synaptic bleachbit libnotify-bin inotify-tools  cifs-utils wmctrl xdotool language-pack-gnome-en keepass2 git curl
+sudo apt-get install -y    apt-transport-https aptitude autoconf autogen automake autotools-dev axel   build-essential bzip2 bzr   deja-dup diffutils  emelfm2 fdupes fontconfig fonts-indic ftp-ssl gawk  libxtst-dev gcc git gnome-logs gnome-pie xfce4-terminal  grep gvfs gzip    less libgl1-mesa-dev m4 make  mime-support nfs-common nmap p7zip p7zip-full perl pkg-config pv rake rar rsync ruby  symlinks tar tlp  unrar unzip wget x11-apps xca xdg-utils  zip synaptic bleachbit libnotify-bin inotify-tools  cifs-utils wmctrl xdotool language-pack-gnome-en keepass2 git curl
 
 #curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash
 
