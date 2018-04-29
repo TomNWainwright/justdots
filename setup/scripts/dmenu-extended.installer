@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+sudo apt-get install -y suckless-tools xfonts-terminus
+	
+git clone https://github.com/MarkHedleyJones/dmenu-extended
+cd dmenu-extended
+sudo python setup.py install
+cd ..
+sudo rm -rf dmenu-extended

@@ -1,0 +1,100 @@
+
+
+
+
+
+ apt-transport-https
+ afuse
+ aptitude
+ autoconf
+ autogen
+ automake
+ autotools-dev
+ axel
+ bijiben
+ bluez
+ build-essential
+ bzip2
+ bzr
+ colortest
+ curl
+ deja-dup
+ diffutils
+ dos2unix
+ emelfm2
+ fdupes
+
+ fontconfig
+ fonts-indic
+ ftp-ssl
+ gawk
+ gcc
+ git
+ gnome-logs
+ gnome-pie
+ gnome-terminal
+ gpick
+ grep
+ gvfs
+ gzip
+ htop
+ httping
+ iftop
+ imagemagick
+ inxi
+ iotop
+ less
+ lftp
+ libavcodec-extra
+ libgl1-mesa-dev
+ libgtk-3-dev
+# libxcursor-dev libxi-dev libxi6 libxinerama-dev libxrandr-dev libxrandr2 lshw lib-freetype6 lib-freetype6-dev
+ m4
+ make
+ mediainfo
+ mime-support
+ nfs-common
+ nmap
+ openssl
+ p7zip
+ p7zip-full
+ perl
+ pkg-config
+ powertop
+ pv
+ pwgen
+ rake
+ rar
+ rsync
+ ruby
+ scdaemon
+ shotwell
+ smbclient
+ software-properties-common
+
+ symlinks
+ tar
+ tig
+ tlp
+ trash-cli
+ tree
+ unrar
+ unzip
+ wget
+ x11-apps
+ xca
+ xdg-utils
+ xterm
+ zip
+ synaptic
+ bleachbit
+ libnotify-bin
+ inotify-tools
+ meld
+ cifs-utils
+ wmctrl
+ xdotool
+
+
+
+

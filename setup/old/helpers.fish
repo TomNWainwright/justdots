@@ -21,7 +21,7 @@ end
 
 function batch-install
 for input in $argv
-      if  [ string match "ppa:*" $input ]
+      if  (string match "ppa:*" $input)
       set ppa $ppa (string replace ppa: " " $input)
       else
       set packages $packages $input

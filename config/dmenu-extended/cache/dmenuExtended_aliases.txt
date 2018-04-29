@@ -1,0 +1,73 @@
+Termite
+XCA
+Create Launcher on the panel
+Backups
+Window Manager
+Workspaces
+Preferred Applications
+Accessibility
+Xarchiver
+Settings Manager
+Rxvt Color Unicode Terminal
+Notification Daemon
+BleachBit
+Mail Reader
+UXTerm
+About Xfce
+XTerm
+Bulk Rename
+Session and Startup
+Xfburn
+Orage preferences
+Application Finder
+Google Chrome
+Desktop 
+Opera
+Orage Calendar
+Notes
+Orage Globaltime
+Screenshot
+Gnome-Pie
+Python (v2.7)
+Access Prompt
+Keyboard
+Removable Drives and Media
+Xfce Terminal
+emelFM2
+Terminal Emulator
+KeePass2
+Power Manager
+Ristretto Image Viewer
+Clipman
+Root Terminal
+File Manager
+Mono Runtime (Terminal)
+Mouse and Touchpad
+Web Browser
+Notifications
+MIME Type Editor
+View file
+Mono Runtime
+Screensaver
+Log Out
+PulseAudio Volume Control
+Mousepad
+Settings Editor
+Window Manager Tweaks
+Sakura
+Appearance
+Thunar File Manager
+Panel
+Open Folder with Thunar
+Sensor Viewer
+Python (v3.5)
+Logs
+BleachBit (as root)
+Run Program...
+Vim
+LilyTerm
+Dictionary
+Display
+Synaptic Package Manager
+QTerm
+Task Manager

@@ -1,0 +1,294 @@
+[
+    [
+        "Termite", 
+        "termite"
+    ], 
+    [
+        "XCA", 
+        "xca"
+    ], 
+    [
+        "Create Launcher on the panel", 
+        "xfce4-panel --add=launcher"
+    ], 
+    [
+        "Backups", 
+        "deja-dup-preferences"
+    ], 
+    [
+        "Window Manager", 
+        "xfwm4-settings"
+    ], 
+    [
+        "Workspaces", 
+        "xfwm4-workspace-settings"
+    ], 
+    [
+        "Preferred Applications", 
+        "exo-preferred-applications"
+    ], 
+    [
+        "Accessibility", 
+        "xfce4-accessibility-settings"
+    ], 
+    [
+        "Xarchiver", 
+        "xarchiver"
+    ], 
+    [
+        "Settings Manager", 
+        "xfce4-settings-manager"
+    ], 
+    [
+        "Rxvt Color Unicode Terminal", 
+        "urxvt"
+    ], 
+    [
+        "Notification Daemon", 
+        "/usr/lib/notification-daemon/notification-daemon"
+    ], 
+    [
+        "BleachBit", 
+        "bleachbit"
+    ], 
+    [
+        "Mail Reader", 
+        "exo-open --launch MailReader"
+    ], 
+    [
+        "UXTerm", 
+        "uxterm"
+    ], 
+    [
+        "About Xfce", 
+        "xfce4-about"
+    ], 
+    [
+        "XTerm", 
+        "xterm"
+    ], 
+    [
+        "Bulk Rename", 
+        "/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename"
+    ], 
+    [
+        "Session and Startup", 
+        "xfce4-session-settings"
+    ], 
+    [
+        "Xfburn", 
+        "xfburn"
+    ], 
+    [
+        "Orage preferences", 
+        "orage -p"
+    ], 
+    [
+        "Application Finder", 
+        "xfce4-appfinder"
+    ], 
+    [
+        "Google Chrome", 
+        "google-chrome-stable"
+    ], 
+    [
+        "Desktop ", 
+        "xfdesktop-settings"
+    ], 
+    [
+        "Opera", 
+        "opera"
+    ], 
+    [
+        "Orage Calendar", 
+        "orage"
+    ], 
+    [
+        "Notes", 
+        "xfce4-notes"
+    ], 
+    [
+        "Orage Globaltime", 
+        "globaltime"
+    ], 
+    [
+        "Screenshot", 
+        "xfce4-screenshooter"
+    ], 
+    [
+        "Gnome-Pie", 
+        "gnome-pie"
+    ], 
+    [
+        "Python (v2.7)", 
+        "python2.7;"
+    ], 
+    [
+        "Access Prompt", 
+        "/usr/lib/gcr/gcr-prompter"
+    ], 
+    [
+        "Keyboard", 
+        "xfce4-keyboard-settings"
+    ], 
+    [
+        "Removable Drives and Media", 
+        "thunar-volman-settings"
+    ], 
+    [
+        "Xfce Terminal", 
+        "xfce4-terminal"
+    ], 
+    [
+        "emelFM2", 
+        "emelfm2"
+    ], 
+    [
+        "Terminal Emulator", 
+        "exo-open --launch TerminalEmulator"
+    ], 
+    [
+        "KeePass2", 
+        "keepass2"
+    ], 
+    [
+        "Power Manager", 
+        "xfce4-power-manager-settings"
+    ], 
+    [
+        "Ristretto Image Viewer", 
+        "ristretto"
+    ], 
+    [
+        "Clipman", 
+        "xfce4-clipman"
+    ], 
+    [
+        "Root Terminal", 
+        "gksu /usr/bin/x-terminal-emulator"
+    ], 
+    [
+        "File Manager", 
+        "thunar-settings"
+    ], 
+    [
+        "Mono Runtime (Terminal)", 
+        "mono;"
+    ], 
+    [
+        "Mouse and Touchpad", 
+        "xfce4-mouse-settings"
+    ], 
+    [
+        "Web Browser", 
+        "exo-open --launch WebBrowser"
+    ], 
+    [
+        "Notifications", 
+        "xfce4-notifyd-config"
+    ], 
+    [
+        "MIME Type Editor", 
+        "xfce4-mime-settings"
+    ], 
+    [
+        "View file", 
+        "gcr-viewer"
+    ], 
+    [
+        "Mono Runtime", 
+        "mono"
+    ], 
+    [
+        "Screensaver", 
+        "xscreensaver-demo"
+    ], 
+    [
+        "Log Out", 
+        "xfce4-session-logout"
+    ], 
+    [
+        "PulseAudio Volume Control", 
+        "pavucontrol"
+    ], 
+    [
+        "Mousepad", 
+        "mousepad"
+    ], 
+    [
+        "Settings Editor", 
+        "xfce4-settings-editor"
+    ], 
+    [
+        "Window Manager Tweaks", 
+        "xfwm4-tweaks-settings"
+    ], 
+    [
+        "Sakura", 
+        "sakura"
+    ], 
+    [
+        "Appearance", 
+        "xfce4-appearance-settings"
+    ], 
+    [
+        "Thunar File Manager", 
+        "thunar"
+    ], 
+    [
+        "Panel", 
+        "xfce4-panel --preferences"
+    ], 
+    [
+        "Open Folder with Thunar", 
+        "thunar"
+    ], 
+    [
+        "Sensor Viewer", 
+        "xfce4-sensors"
+    ], 
+    [
+        "Python (v3.5)", 
+        "python3.5;"
+    ], 
+    [
+        "Logs", 
+        "gnome-logs"
+    ], 
+    [
+        "BleachBit (as root)", 
+        "su-to-root -X -c bleachbit"
+    ], 
+    [
+        "Run Program...", 
+        "xfce4-appfinder --collapsed"
+    ], 
+    [
+        "Vim", 
+        "vim;"
+    ], 
+    [
+        "LilyTerm", 
+        "lilyterm"
+    ], 
+    [
+        "Dictionary", 
+        "xfce4-dict"
+    ], 
+    [
+        "Display", 
+        "xfce4-display-settings"
+    ], 
+    [
+        "Synaptic Package Manager", 
+        "synaptic-pkexec"
+    ], 
+    [
+        "QTerm", 
+        "qterm -caption"
+    ], 
+    [
+        "Task Manager", 
+        "xfce4-taskmanager"
+    ]
+]

@@ -1,7 +1,7 @@
 
 
 
-. /home/.nix-profile/etc/profile.d/nix.sh
+#. /home/.nix-profile/etc/profile.d/nix.sh
 
 
 
@@ -9,9 +9,9 @@ setxkbmap gb
 
 
 
-. /home/dotfiles/shells/bash/lib/aliases
-. /home/dotfiles/shells/bash/lib/environment
-. /home/dotfiles/shells/bash/lib/fzy
+. /home/tom/dotfiles/shells/bash/lib/aliases
+. /home/tom/dotfiles/shells/bash/lib/environment
+. /home/tom/dotfiles/shells/bash/lib/fzy
 xcape_single
 
 
@@ -30,6 +30,6 @@ export GOROOT=$HOME/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/gocode
 export PATH=$PATH:$GOPATH/bin
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+ #       source /etc/profile.d/vte.sh
+#fi

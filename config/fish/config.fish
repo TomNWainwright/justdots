@@ -4,7 +4,7 @@ source /home/tom/.config/fish/functions/helpers.fish
 
 
 # REUSE ENVIRONMENT VARIABLES FROM ~/.bash_profile
-egrep "^export " ~/.bash_profile | while read e
+egrep "^export " ~/.bashrc | while read e
     set var (echo $e | sed -E "s/^export ([A-Z0-9_]+)=(.*)\$/\1/")
     set value (echo $e | sed -E "s/^export ([A-Z0-9_]+)=(.*)\$/\2/")
 
@@ -98,25 +98,4 @@ alias untar 'tar -xvf'
 
 
 
-
-
-
-
-
-# Paths to your tackle
-set tacklebox_path ~/.tackle ~/.tacklebox
-
-# Theme
-#set tacklebox_theme entropy
-
-# Which modules would you like to load? (modules can be found in ~/.tackle/modules/*)
-# Custom modules may be added to ~/.tacklebox/modules/
-# Example format: set tacklebox_modules virtualfish virtualhooks
-
-# Which plugins would you like to enable? (plugins can be found in ~/.tackle/plugins/*)
-# Custom plugins may be added to ~/.tacklebox/plugins/
-# Example format: set tacklebox_plugins python extract
-
-# Load Tacklebox configuration
-. ~/.tacklebox/tacklebox.fish
 
