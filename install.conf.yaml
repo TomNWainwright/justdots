@@ -10,6 +10,7 @@
 - 
   link:
     ~/.fluxbox: config/fluxbox
+    
     ~/.config/katepartrc: config/kate/katepartrc
     ~/.config/konsolerc: config/konsolerc
     ~/.config/katerc: config/kate/katerc
@@ -19,6 +20,8 @@
     ~/.bashrc: shells/bash/bashrc
     ~/.profile: shells/bash/profile
     ~/.config/rofi: config/rofi
+    ~/.config/qtile: config/qtile
+
     ~/.config/doublecmd: config/doublecmd
     ~/.config/geany: config/geany
     ~/.config/mimeapps.list: config/mimeapps.list

@@ -545,3 +545,5 @@
         }
     }
 }
+2018-04-30 11:45:13.412 DEBUG [main #0] handlePtyCloseRequest() WARNING: Input arrived for a terminal which doesn't exist. 
+2018-04-30 11:45:13.524 DEBUG [main #0] handlePtyInput() WARNING: Input arrived for a terminal which doesn't exist. 

@@ -32,11 +32,10 @@ keys = [
     Key([mod, "control"], "q", lazy.shutdown()),
 
     # Apps hotkeys
-    Key([mod], "v", lazy.spawn("urxvt")),
-    Key([mod], "g", lazy.spawn("emacs")),
+    Key([mod], "x", lazy.spawn("jumpapp extraterm")),
+    Key([mod], "g", lazy.spawn("jumpapp medit")),
     Key([mod], "z", lazy.spawn("jumpapp nemo")),
-    Key([mod], "x", lazy.spawn("deadbeef")),
-    Key([mod], "Insert", lazy.spawn("jumpapp google-chrome")),
+    Key([mod], "c", lazy.spawn("jumpapp google-chrome")),
     Key([mod], "Home", lazy.spawn("firefox -P music")),
     Key([mod], "Prior", lazy.spawn("firefox --private-window")),
 

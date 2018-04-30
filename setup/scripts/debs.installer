@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 /home/tom/dotfiles/setup/scripts/package-lists/download_tools.packages
+
 mkdir -p /home/tom/tempdebs/
 cd /home/tom/tempdebs/
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
