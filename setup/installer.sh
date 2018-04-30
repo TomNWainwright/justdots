@@ -1,5 +1,5 @@
 
-
+/home/tom/dotfiles/shells/bash/lib/environment
 /home/tom/dotfiles/setup/scripts/package-lists/download_tools.packages
 /home/tom/dotfiles/setup/scripts/package-lists/archive_tools.packages
 /home/tom/dotfiles/setup/scripts/package-lists/build_tools.packages
@@ -19,7 +19,6 @@ sudo chown -R tom:tom /home/tom/.cache
 /home/tom/dotfiles/setup/scripts/package-lists/prog_languages.packages
 sudo chown -R tom:tom /home/tom/.cache
 
-/home/tom/dotfiles/setup/scripts/medit.installer
 /home/tom/dotfiles/setup/scripts/dmenu-extended.installer
 /home/tom/dotfiles/setup/scripts/fish.installer
 /home/tom/dotfiles/setup/scripts/jumpapp.installer

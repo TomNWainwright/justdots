@@ -80,6 +80,13 @@ keys = [
 	#Key( [mod, 'shift'], '2', lazy.to_screen(1), lazy.group.toscreen(1)),
 	]
 
+# create groups
+groups = [Group(i) for i in '1234567890']
+for i in groups:
+	# mod1 + letter of group = switch to group
+	keys.append(
+		Key([mod], i.name, lazy.group[i.name].toscreen())
+	)
 
 	# mod1 + shift + letter of group = switch to & move focused window to group
 	keys.append(

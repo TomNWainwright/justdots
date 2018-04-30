@@ -31,6 +31,174 @@ def __x():
 
 # see http://docs.qtile.org/en/latest/manual/config/keys.html
 keys = [
+<<<<<<< HEAD
+
+    # Layout hotkeys
+    Key([mod], "h", lazy.layout.shrink_main()),
+    Key([mod], "l", lazy.layout.grow_main()),
+    Key([mod], "j", lazy.layout.down()),
+    Key([mod], "k", lazy.layout.up()),
+    Key([mod, "shift"], "j", lazy.layout.shuffle_down()),
+    Key([mod, "shift"], "k", lazy.layout.shuffle_up()),
+    Key([mod], "n", lazy.layout.normalize()),
+    Key([mod], "o", lazy.layout.maximize()),
+
+    # Window hotkeys
+    Key([mod], "space", lazy.window.toggle_fullscreen()),
+    Key([mod], "c", lazy.window.kill()),
+
+    # Spec hotkeys
+    Key([mod], "Return", lazy.spawncmd()),
+    Key([mod, "control"], "r", lazy.restart()),
+    Key([mod, "control"], "q", lazy.shutdown()),
+
+    # Apps hotkeys
+    Key([mod], "x", lazy.spawn("jumpapp extraterm")),
+    Key([mod], "g", lazy.spawn("jumpapp medit")),
+    Key([mod], "z", lazy.spawn("jumpapp nemo")),
+    Key([mod], "c", lazy.spawn("jumpapp google-chrome")),
+    Key([mod], "Home", lazy.spawn("firefox -P music")),
+    Key([mod], "Prior", lazy.spawn("firefox --private-window")),
+
+    # System hotkeys
+    Key([mod, "shift", "control"], "F11", lazy.spawn("sudo hibernate-reboot")),
+    Key([mod, "shift", "control"], "F12", lazy.spawn("systemctl hibernate")),
+    Key([], "Print", lazy.spawn("scrot -e 'mv $f /home/user/screenshots/'")),
+
+    # Media hotkeys
+    Key([], 'XF86AudioRaiseVolume', lazy.spawn('pulseaudio-ctl up 5')),
+    Key([], 'XF86AudioLowerVolume', lazy.spawn('pulseaudio-ctl down 5')),
+    Key([], 'XF86AudioMute', lazy.spawn('pulseaudio-ctl set 1')),
+]
+
+
+# ----------------------------
+# --- Workspaces and Rooms ---
+# ----------------------------
+
+# The basic idea behind Workspaces and Rooms is to control
+# DIFFERENT subsets of groups with the SAME hotkeys.
+# So we can have multiple 'qwerasdf' rooms in a different workspaces.
+#
+# Qtile Groups are used behind the scenes, but their visibility
+# is set dynamically.
+
+def get_group_name(workspace, room):
+    """ Calculate Group name based on (workspace,room) combination.
+    """
+    return "%s%s" % (room, workspace)
+
+# List of available workspaces.
+# Each workspace has its own prefix and hotkey.
+workspaces = [
+    ('1', 'F1'),
+    ('2', 'F2'),
+    ('3', '1'),
+    ('4', '2'),
+    ('o', 'o'),
+    ('p', 'p'),
+]
+
+# List of available rooms.
+# Rooms are identical between workspaces, but they can
+# be changed to different ones as well. Minor changes required.
+rooms = "qwerasdf"
+
+# Oops, time for a little hack there.
+# This is a global object with information about current workspace.
+# (viable as config code, not sure about client-server though)
+wsp = {
+    'current': workspaces[0][0], # first workspace is active by default
+}
+# ... and information about active group in the each workspace.
+for w, _ in workspaces:
+    wsp[w] = {
+        'active_group': get_group_name(w, rooms[0]) # first room is active by default
+    }
+
+def get_workspace_groups(workspace):
+    """ Get list of Groups that belongs to workspace.
+    """
+    return [ get_group_name(workspace, room) for room in rooms]
+
+def to_workspace(workspace):
+    """ Change current workspace to another one.
+    """
+    def f(qtile):
+        global wsp
+
+        # we need to save current active room(group) somewhere
+        # to return to it later
+        wsp[wsp['current']]['active_group'] = qtile.currentGroup.name
+
+        # now we can change current workspace to the new one
+        # (no actual switch there)
+        wsp['current'] = workspace
+        # and navigate to the active group from the workspace
+        # (actual switch)
+        qtile.groupMap[
+            wsp[workspace]['active_group']
+        ].cmd_toscreen()
+
+        # we also need to change subset of visible groups in the GroupBox widget
+        qtile.widgetMap['groupbox'].visible_groups=get_workspace_groups(workspace)
+        qtile.widgetMap['groupbox'].draw()
+        # You can do some other cosmetic stuff here.
+        # For example, change Bar background depending on the current workspace.
+        # # qtile.widgetMap['groupbox'].bar.background="ff0000"
+    return f
+
+def to_room(room):
+    """ Change active room to another within the current workspace.
+    """
+    def f(qtile):
+        global wsp
+        qtile.groupMap[get_group_name(wsp['current'], room)].cmd_toscreen()
+    return f
+
+def window_to_workspace(workspace, room=rooms[0]):
+    """ Move active window to another workspace.
+    """
+    def f(qtile):
+        global wsp
+        qtile.currentWindow.togroup(wsp[workspace]['active_group'])
+    return f
+
+def window_to_room(room):
+    """ Move active window to another room within the current workspace.
+    """
+    def f(qtile):
+        global wsp
+        qtile.currentWindow.togroup(get_group_name(wsp['current'], room))
+    return f
+
+# Create individual Group for each (workspace,room) combination we have
+groups = []
+for workspace, hotkey in workspaces:
+    for room in rooms:
+        groups.append(Group(get_group_name(workspace, room)))
+
+# Assign individual hotkeys for each workspace we have
+for workspace, hotkey in workspaces:
+    keys.append(Key([mod], hotkey, lazy.function(
+        to_workspace(workspace))))
+    keys.append(Key([mod, "shift"], hotkey, lazy.function(
+        window_to_workspace(workspace))))
+
+# Assign shared hotkeys for each room we have.
+# Decision about actual group to open is made dynamically.
+for room in rooms:
+    keys.append(Key([mod], room, lazy.function(
+        to_room(room))))
+    keys.append(Key([mod, "shift"], room, lazy.function(
+        window_to_room(room))))
+
+
+# ---------------------------
+# ---- Layouts & Widgets ----
+# ---------------------------
+
+=======
 	# Switch between windows in current stack pane
 	Key([mod], 'Tab', lazy.layout.down()),
 	Key([mod, 'shift'], 'Tab', lazy.layout.up()),
@@ -80,6 +248,13 @@ keys = [
 	#Key( [mod, 'shift'], '2', lazy.to_screen(1), lazy.group.toscreen(1)),
 	]
 
+# create groups
+groups = [Group(i) for i in '1234567890']
+for i in groups:
+	# mod1 + letter of group = switch to group
+	keys.append(
+		Key([mod], i.name, lazy.group[i.name].toscreen())
+	)
 
 	# mod1 + shift + letter of group = switch to & move focused window to group
 	keys.append(
@@ -87,6 +262,7 @@ keys = [
 	)
 
 # see http://docs.qtile.org/en/latest/manual/ref/layouts.html
+>>>>>>> 38cc5cde07d8202ed0e8a909c92c1b6a1954fccd
 layouts = [
 	layout.Max(),
 	layout.Floating(border_focus=color_alert, border_normal=color_frame, ),

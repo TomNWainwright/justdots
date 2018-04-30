@@ -1,5 +1,5 @@
 favorites=exo-terminal-emulator.desktop,exo-file-manager.desktop,exo-mail-reader.desktop,exo-web-browser.desktop
-recent=xfce4-terminal.desktop,keepass2.desktop,medit.desktop,scratch.desktop,autokey-gtk.desktop,actiona.desktop,google-chrome.desktop,xfce-session-settings.desktop,com.github.hluk.copyq.desktop,exo-terminal-emulator.desktop
+recent=exo-web-browser.desktop,medit.desktop,exo-file-manager.desktop,xfce4-terminal.desktop,keepass2.desktop,scratch.desktop,autokey-gtk.desktop,actiona.desktop,google-chrome.desktop,xfce-session-settings.desktop
 button-title=Applications
 button-icon=xfce4-whiskermenu
 button-single-row=false

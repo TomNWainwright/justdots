@@ -1,17 +1,17 @@
-2018-04-30 09:03:56.760 INFO [main #0] Recording logs to  /home/tom/.config/extraterm/extraterm.log
-2018-04-30 09:03:56.770 INFO [MainExtensionManager #0] Read extension metadata from 'audio-viewer'. 
-2018-04-30 09:03:56.771 INFO [MainExtensionManager #0] Read extension metadata from 'inject-shell-integration'. 
-2018-04-30 09:03:56.771 INFO [MainExtensionManager #0] Read extension metadata from 'text-viewer-syntax_highlighting'. 
-2018-04-30 09:03:56.772 INFO [MainExtensionManager #0] Read extension metadata from 'text-viewer-tab-width'. 
-2018-04-30 09:03:56.777 INFO [main #0] Reading user configuration from /home/tom/.config/extraterm/extraterm.json 
-2018-04-30 09:03:56.847 INFO [main #0] args [
+2018-04-30 13:16:27.541 INFO [main #0] Recording logs to  /home/tom/.config/extraterm/extraterm.log
+2018-04-30 13:16:27.549 INFO [MainExtensionManager #0] Read extension metadata from 'audio-viewer'. 
+2018-04-30 13:16:27.550 INFO [MainExtensionManager #0] Read extension metadata from 'inject-shell-integration'. 
+2018-04-30 13:16:27.550 INFO [MainExtensionManager #0] Read extension metadata from 'text-viewer-syntax_highlighting'. 
+2018-04-30 13:16:27.551 INFO [MainExtensionManager #0] Read extension metadata from 'text-viewer-tab-width'. 
+2018-04-30 13:16:27.560 INFO [main #0] Reading user configuration from /home/tom/.config/extraterm/extraterm.json 
+2018-04-30 13:16:27.661 INFO [main #0] args [
     "/home/tom/apps/extraterm/extraterm"
 ]
-2018-04-30 09:03:56.851 INFO [main #0] Display scale factor is  1
-2018-04-30 09:03:56.852 INFO [main #0] originalFactorArg: 
-2018-04-30 09:03:56.852 INFO [main #0] originalScaleFactor: 1
-2018-04-30 09:03:56.936 INFO [BulkFileProtocolConnector #0] Bulk file server running on 127.0.0.1 port 45615 
-2018-04-30 09:03:57.734 DEBUG [main #0] Full config:  {
+2018-04-30 13:16:27.696 INFO [main #0] Display scale factor is  1
+2018-04-30 13:16:27.698 INFO [main #0] originalFactorArg: 
+2018-04-30 13:16:27.698 INFO [main #0] originalScaleFactor: 1
+2018-04-30 13:16:27.833 INFO [BulkFileProtocolConnector #0] Bulk file server running on 127.0.0.1 port 35447 
+2018-04-30 13:16:29.104 DEBUG [main #0] Full config:  {
     "systemConfig": {
         "homeDir": "/home/tom",
         "keyBindingsContexts": {
@@ -545,5 +545,3 @@
         }
     }
 }
-2018-04-30 11:45:13.412 DEBUG [main #0] handlePtyCloseRequest() WARNING: Input arrived for a terminal which doesn't exist. 
-2018-04-30 11:45:13.524 DEBUG [main #0] handlePtyInput() WARNING: Input arrived for a terminal which doesn't exist. 
