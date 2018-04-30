@@ -16,6 +16,7 @@
         <value type="int" value="6"/>
         <value type="int" value="2"/>
         <value type="int" value="1"/>
+        <value type="int" value="4"/>
       </property>
     </property>
   </property>
@@ -33,13 +34,23 @@
     <property name="plugin-5" type="string" value="clock"/>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="task manager"/>
-        <value type="string" value="blueman-applet"/>
         <value type="string" value="thunar"/>
+        <value type="string" value="nemo"/>
+        <value type="string" value="task manager"/>
+        <value type="string" value="autokey-gtk"/>
+        <value type="string" value="blueman-applet"/>
         <value type="string" value="update-notifier"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="actiona"/>
         <value type="string" value="javaembeddedframe"/>
+        <value type="string" value="copyq"/>
       </property>
     </property>
     <property name="plugin-1" type="string" value="whiskermenu"/>
+    <property name="plugin-4" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15250794471.desktop"/>
+      </property>
+    </property>
   </property>
 </channel>

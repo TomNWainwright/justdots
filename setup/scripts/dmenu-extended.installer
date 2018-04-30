@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
-
+/home/tom/dotfiles/setup/scripts/package-lists/build_tools.packages
+/home/tom/dotfiles/setup/scripts/package-lists/download_tools.packages
 sudo apt-get install -y suckless-tools xfonts-terminus
 	
 git clone https://github.com/MarkHedleyJones/dmenu-extended

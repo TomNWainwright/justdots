@@ -11,6 +11,7 @@ setxkbmap gb
 
 . /home/tom/dotfiles/shells/bash/lib/aliases
 . /home/tom/dotfiles/shells/bash/lib/environment
+. /home/tom/dotfiles/shells/extraterm-commands/setup_extraterm_bash.sh
 . /home/tom/dotfiles/shells/bash/lib/fzy
 xcape_single
 

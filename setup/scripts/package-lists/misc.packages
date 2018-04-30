@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+sudo apt-get install -y bzr deja-dup diffutils fdupes fontconfig fonts-indic gawk libxtst-dev grep gvfs less libgl1-mesa-dev m4 mime-support nfs-common nmap  pv  rsync  symlinks tlp x11-apps xca xdg-utils libnotify-bin inotify-tools cifs-utils language-pack-gnome-en 

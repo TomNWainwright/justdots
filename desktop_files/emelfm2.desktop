@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=emelFM2
+GenericName=file manager
+Comment=2-pane Gtk+2 file manager
+TryExec=emelfm2
+Exec=emelfm2
+Icon=emelfm2/emelfm2_48.png
+Terminal=false
+StartupNotify=false
+Categories=System;FileTools;GTK;FileManager;

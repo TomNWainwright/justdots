@@ -28,6 +28,7 @@
     ~/.config/fish: config/fish
     ~/.config/fisherman: config/fisherman
     ~/.config/xfce4: config/xfce4
+    ~/.via/xfce4: config/via
     ~/.config/tilda: config/tilda
     ~/.config/micro: config/micro
     ~/.config/dmenu-extended: config/dmenu-extended
@@ -41,5 +42,6 @@
     ~/.config/opera/Preferences: config/opera_prefs
     ~/.jupyter: config/jupyter
     ~/bins:   bins
+    ~/.config/extraterm: config/extraterm
 - 
   shell: []

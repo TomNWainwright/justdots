@@ -1,7 +1,11 @@
 [
     [
-        "Termite", 
-        "termite"
+        "All-in-One Messenger", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=lainlkmlgipednloilifbppmhdocjbda"
+    ], 
+    [
+        "JSTorrent Lite", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=abmohcnlldaiaodkpacnldcdnjjgldfh"
     ], 
     [
         "XCA", 
@@ -16,12 +20,20 @@
         "deja-dup-preferences"
     ], 
     [
+        "Chrome Remote Desktop", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=gbchcmhmhahfdphkhkmpfmihenigjmpp"
+    ], 
+    [
         "Window Manager", 
         "xfwm4-settings"
     ], 
     [
         "Workspaces", 
         "xfwm4-workspace-settings"
+    ], 
+    [
+        "JAvascript based Database Editor", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=bponbdjkefbmgkfiiphhabghkkfocook"
     ], 
     [
         "Preferred Applications", 
@@ -40,8 +52,16 @@
         "xfce4-settings-manager"
     ], 
     [
-        "Rxvt Color Unicode Terminal", 
-        "urxvt"
+        "Twitter", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=lnhafpappkfaoibaimdblonlcmclladf"
+    ], 
+    [
+        "Chrome MySQL Admin", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ndgnpnpakfcdjmpgmcaknimfgcldechn"
+    ], 
+    [
+        "CompizConfig Settings Manager", 
+        "ccsm"
     ], 
     [
         "Notification Daemon", 
@@ -52,24 +72,20 @@
         "bleachbit"
     ], 
     [
+        "Worker", 
+        "worker"
+    ], 
+    [
         "Mail Reader", 
         "exo-open --launch MailReader"
     ], 
     [
-        "UXTerm", 
-        "uxterm"
-    ], 
-    [
-        "About Xfce", 
-        "xfce4-about"
-    ], 
-    [
-        "XTerm", 
-        "xterm"
-    ], 
-    [
         "Bulk Rename", 
         "/usr/lib/x86_64-linux-gnu/Thunar/ThunarBulkRename"
+    ], 
+    [
+        "Files", 
+        "nemo"
     ], 
     [
         "Session and Startup", 
@@ -80,12 +96,20 @@
         "xfburn"
     ], 
     [
+        "Moo.do", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=iffimmolghilclfndeiebgppddmagofk"
+    ], 
+    [
         "Orage preferences", 
         "orage -p"
     ], 
     [
         "Application Finder", 
         "xfce4-appfinder"
+    ], 
+    [
+        "CopyQ", 
+        "copyq"
     ], 
     [
         "Google Chrome", 
@@ -102,10 +126,6 @@
     [
         "Orage Calendar", 
         "orage"
-    ], 
-    [
-        "Notes", 
-        "xfce4-notes"
     ], 
     [
         "Orage Globaltime", 
@@ -130,10 +150,6 @@
     [
         "Keyboard", 
         "xfce4-keyboard-settings"
-    ], 
-    [
-        "Removable Drives and Media", 
-        "thunar-volman-settings"
     ], 
     [
         "Xfce Terminal", 
@@ -168,12 +184,20 @@
         "gksu /usr/bin/x-terminal-emulator"
     ], 
     [
-        "File Manager", 
-        "thunar-settings"
+        "Polarr Photo Editor", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=djonnbgfieijldcieafgjcnhmpcfpmgg"
+    ], 
+    [
+        "Archive Manager", 
+        "file-roller"
     ], 
     [
         "Mono Runtime (Terminal)", 
         "mono;"
+    ], 
+    [
+        "Compiz", 
+        "compiz"
     ], 
     [
         "Mouse and Touchpad", 
@@ -186,6 +210,14 @@
     [
         "Notifications", 
         "xfce4-notifyd-config"
+    ], 
+    [
+        "Zed Code Editor", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pfmjnmeipppmcebplngmhfkleiinphhp"
+    ], 
+    [
+        "GNOME System Monitor", 
+        "gnome-system-monitor"
     ], 
     [
         "MIME Type Editor", 
@@ -204,12 +236,24 @@
         "xscreensaver-demo"
     ], 
     [
+        "Crosh Window", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=nhbmpbdladcchdhkemlojfjdknjadhmh"
+    ], 
+    [
         "Log Out", 
         "xfce4-session-logout"
     ], 
     [
         "PulseAudio Volume Control", 
         "pavucontrol"
+    ], 
+    [
+        "VNC\u00ae Viewer for Google Chrome\u2122", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=iabmpiboiopbgfabjmgeedhcmjenhbla"
+    ], 
+    [
+        "Pocket", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=mjcnijlhddpbdemagnpefmlkjdagkogk"
     ], 
     [
         "Mousepad", 
@@ -224,24 +268,40 @@
         "xfwm4-tweaks-settings"
     ], 
     [
+        "File Manager", 
+        "exo-open --launch FileManager"
+    ], 
+    [
         "Sakura", 
         "sakura"
+    ], 
+    [
+        "System Monitor", 
+        "gnome-system-monitor"
     ], 
     [
         "Appearance", 
         "xfce4-appearance-settings"
     ], 
     [
-        "Thunar File Manager", 
-        "thunar"
+        "Autorun Prompt", 
+        "nemo-autorun-software"
+    ], 
+    [
+        "File System for Dropbox", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=hlffpaajmfllggclnjppbblobdhokjhe"
+    ], 
+    [
+        "TeamViewer", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=oooiobdokpcfdlahlmcddobejikcmkfo"
     ], 
     [
         "Panel", 
         "xfce4-panel --preferences"
     ], 
     [
-        "Open Folder with Thunar", 
-        "thunar"
+        "Caret-T", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=agiednhnlghobdgpgfdnbdaflnngmoij"
     ], 
     [
         "Sensor Viewer", 
@@ -260,6 +320,10 @@
         "su-to-root -X -c bleachbit"
     ], 
     [
+        "Web Server for Chrome", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ofhbbkphhbklhfoeikjpcbhemlocgigb"
+    ], 
+    [
         "Run Program...", 
         "xfce4-appfinder --collapsed"
     ], 
@@ -268,8 +332,16 @@
         "vim;"
     ], 
     [
-        "LilyTerm", 
-        "lilyterm"
+        "Mic Note -Voice Recorder & Notepad", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=nhkoenoennbjnibepkjdheodiaojdgpk"
+    ], 
+    [
+        "Nemo", 
+        "nemo -n"
+    ], 
+    [
+        "Alchemize", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=ehjicobhjldomnjicohkkejcgljecncf"
     ], 
     [
         "Dictionary", 
@@ -281,14 +353,30 @@
     ], 
     [
         "Synaptic Package Manager", 
-        "synaptic-pkexec"
+        "gksu synaptic-pkexec"
     ], 
     [
-        "QTerm", 
-        "qterm -caption"
+        "NetSurf Web Browser", 
+        "netsurf-gtk"
     ], 
     [
         "Task Manager", 
         "xfce4-taskmanager"
+    ], 
+    [
+        "Text", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=mmfbcljfglbokpmkimbfghdkjmjhdgbg"
+    ], 
+    [
+        "Caret", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=fljalecfjciodhpcledpamjachpmelml"
+    ], 
+    [
+        "Minimalist Markdown Editor", 
+        "/opt/google/chrome/google-chrome --profile-directory=Default --app-id=pghodfjepegmciihfhdipmimghiakcjf"
+    ], 
+    [
+        "Termite", 
+        "termite"
     ]
 ]

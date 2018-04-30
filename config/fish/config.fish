@@ -1,6 +1,5 @@
 source /home/tom/.config/fish/functions/helpers.fish
-
-
+source /home/tom/dotfiles/shells/extraterm-commands/setup_extraterm_fish.fish
 
 
 # REUSE ENVIRONMENT VARIABLES FROM ~/.bash_profile

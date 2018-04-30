@@ -1,0 +1,86 @@
+{
+  "systemConfig": null,
+  "expandedProfiles": [
+    {
+      "name": "Default",
+      "type": "unix",
+      "command": "/bin/bash",
+      "arguments": [],
+      "extraEnv": {}
+    }
+  ],
+  "blinkingCursor": false,
+  "scrollbackMaxLines": 500000,
+  "scrollbackMaxFrames": 100,
+  "showTips": "never",
+  "tipTimestamp": 1525032914144,
+  "tipCounter": 1,
+  "themeTerminal": "tango-terminal",
+  "themeSyntax": "default-syntax",
+  "themeGUI": "atomic-dark-ui",
+  "showTitleBar": false,
+  "commandLineActions": [
+    {
+      "frame": true,
+      "match": "cd",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "rm",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "mkdir",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "rmdir",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "mv",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "cp",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "chmod",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "show",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "fd",
+      "matchType": "name"
+    },
+    {
+      "frame": true,
+      "match": "apt-get",
+      "matchType": "name"
+    }
+  ],
+  "keyBindingsFilename": "keybindings.json",
+  "terminalFontSize": 12,
+  "terminalFont": "DejaVuSansMono",
+  "uiScalePercent": 100,
+  "windowConfiguration": {
+    "0": {
+      "x": 960,
+      "y": 31,
+      "width": 960,
+      "height": 1050
+    }
+  }
+}
