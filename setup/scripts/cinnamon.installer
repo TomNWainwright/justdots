@@ -2,7 +2,7 @@
 
 sudo apt-get install -y  software-properties-common 
 
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-add-repository ppa:embrosyn/cinnamon
-sudo apt-get install cinnamon
+sudo apt-get  update
+sudo apt-get upgrade -y
+sudo apt-add-repository -y ppa:embrosyn/cinnamon
+sudo apt-get install -y cinnamon
