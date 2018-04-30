@@ -4,9 +4,9 @@
 cd ~
 cd /home/tom/dotfiles
 ./install
-mkdir -p /home/tom/.local/share/applications
-rm -rf /home/tom/.local/share/applications
-sudo rm -rf /usr/share/applications
-sudo ln -s /home/tom/dotfiles/desktpop_files /usr/share/applications
-ln -s /home/tom/dotfiles/desktpop_files /home/tom/.local/share/applications
+#mkdir -p /home/tom/.local/share/applications
+#rm -rf /home/tom/.local/share/applications
+#sudo rm -rf /usr/share/applications
+#sudo ln -s /home/tom/dotfiles/desktpop_files /usr/share/applications
+#ln -s /home/tom/dotfiles/desktpop_files /home/tom/.local/share/applications
 cd ~
