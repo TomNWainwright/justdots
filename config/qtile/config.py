@@ -60,10 +60,7 @@ keys = [
 	Key([mod], 'l', lazy.spawn('jumpapp nemo')),
 
 	# Switch groups
-	Key([], 'XF86Back', lazy.screen.prev_group(skip_managed=True, )),
-	Key([], 'XF86Forward', lazy.screen.next_group(skip_managed=True, )),
-	Key([mod], 'XF86Back', lazy.screen.prev_group(skip_managed=True, )),
-	Key([mod], 'XF86Forward', lazy.screen.next_group(skip_managed=True, )),
+
 	Key([mod], 'Left', lazy.screen.prev_group(skip_managed=True, )),
 	Key([mod], 'Right', lazy.screen.next_group(skip_managed=True, )),
 	Key([mod], 'Escape', lazy.screen.togglegroup()),
