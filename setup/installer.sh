@@ -1,5 +1,5 @@
 
-/home/tom/dotfiles/setup/scripts/cinnamon.installer
+#/home/tom/dotfiles/setup/scripts/cinnamon.installer
 /home/tom/dotfiles/shells/bash/lib/environment
 /home/tom/dotfiles/setup/scripts/package-lists/download_tools.packages
 /home/tom/dotfiles/setup/scripts/package-lists/archive_tools.packages
