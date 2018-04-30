@@ -1,5 +1,7 @@
 
 
+
+
 from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.command import lazy
 from libqtile import layout, hook, bar, widget
@@ -53,14 +55,24 @@ keys = [
 	# Unsplit = 1 window displayed, like Max layout, but still with
 	# multiple stack panes
 	#Key([mod, 'shift'], 'Return', lazy.layout.toggle_split()),
-	Key([mod], 'Return', lazy.spawn('jumpapp extraterm')),
+	Key([mod], 'Return', lazy.spawn('x-terminal-emulator')),
+	Key([mod], 'v', lazy.spawn('gvim')),
+	Key([mod], 'l', lazy.spawn('xlock')),
+	Key([], 'XF86Launch1', lazy.spawn('xlock')),
+	Key([], 'XF86AudioMute', lazy.spawn('amixer -D pulse set Master toggle')),
+	#Key([], 'XF86AudioMicMute', lazy.spawn('amixer -D pulse set Master toggle')),
+	Key([], 'XF86AudioRaiseVolume', lazy.spawn('amixer -c 0 -q set Master 2dB+')),
+	Key([], 'XF86AudioLowerVolume', lazy.spawn('amixer -c 0 -q set Master 2dB-')),
+		Key([mod], 'Return', lazy.spawn('jumpapp extraterm')),
     	Key([mod], 'v', lazy.spawn('jumpapp google-chrome')),
 
-	Key([mod], 'v', lazy.spawn('jumpapp medit')),
+	Key([mod], 'b', lazy.spawn('jumpapp medit')),
 	Key([mod], 'l', lazy.spawn('jumpapp nemo')),
-
 	# Switch groups
-
+	Key([], 'XF86Back', lazy.screen.prev_group(skip_managed=True, )),
+	Key([], 'XF86Forward', lazy.screen.next_group(skip_managed=True, )),
+	Key([mod], 'XF86Back', lazy.screen.prev_group(skip_managed=True, )),
+	Key([mod], 'XF86Forward', lazy.screen.next_group(skip_managed=True, )),
 	Key([mod], 'Left', lazy.screen.prev_group(skip_managed=True, )),
 	Key([mod], 'Right', lazy.screen.next_group(skip_managed=True, )),
 	Key([mod], 'Escape', lazy.screen.togglegroup()),
@@ -80,6 +92,13 @@ keys = [
 	#Key( [mod, 'shift'], '2', lazy.to_screen(1), lazy.group.toscreen(1)),
 	]
 
+# create groups
+groups = [Group(i) for i in '1234567890']
+for i in groups:
+	# mod1 + letter of group = switch to group
+	keys.append(
+		Key([mod], i.name, lazy.group[i.name].toscreen())
+	)
 
 	# mod1 + shift + letter of group = switch to & move focused window to group
 	keys.append(

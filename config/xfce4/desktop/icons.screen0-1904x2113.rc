@@ -1,21 +1,25 @@
 [xfdesktop-version-4.10.3+-rcfile_format]
 4.10.3+=true
 
-[ROOT-A]
-row=1
-col=1
-
-[4.1 KB Volume]
-row=7
+[433 MB Volume]
+row=4
 col=0
 
-[48 MB Volume]
-row=6
+[4.1 KB Volume]
+row=0
 col=0
 
 [e679d6e2-85b4-4493-844a-9f48c78715f2]
 row=2
 col=1
+
+[ROOT-A]
+row=8
+col=0
+
+[48 MB Volume]
+row=3
+col=0
 
 [74743dbc-f8b3-48d2-b0f4-068a514e8228]
 row=3
@@ -24,10 +28,6 @@ col=1
 [6107-4EB4]
 row=0
 col=1
-
-[433 MB Volume]
-row=2
-col=0
 
 [Rubbish Bin]
 row=4

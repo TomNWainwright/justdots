@@ -21,7 +21,7 @@
     ~/.profile: shells/bash/profile
     ~/.config/rofi: config/rofi
     ~/.config/qtile: config/qtile
-
+    ~/.notion: /home/tom/dotfiles/window_managers/notion
     ~/.config/doublecmd: config/doublecmd
     ~/.config/geany: config/geany
     ~/.config/mimeapps.list: config/mimeapps.list

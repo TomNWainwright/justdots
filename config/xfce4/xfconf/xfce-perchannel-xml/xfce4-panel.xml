@@ -49,7 +49,7 @@
     <property name="plugin-1" type="string" value="whiskermenu"/>
     <property name="plugin-4" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="15250794471.desktop"/>
+        <value type="string" value="15250972201.desktop"/>
       </property>
     </property>
   </property>
