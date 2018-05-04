@@ -9,9 +9,4 @@ done
 
 [ -r $HOME/rerun/etc/bash_completion.sh ] && source $HOME/rerun/etc/bash_completion.sh
 export LD_LIBRARY_PATH=:/etc/ld.so.conf.d/vte.conf$LD_LIBRARY_PATH
-export KITTY_DIR=/home/data/apps/kitty
 
-NIX_LINK=/home/ivan/.nix-profile
-export LD_LIBRARY_PATH="$NIX_LINK"/lib
-export GOPATH=$HOME/go
-export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
