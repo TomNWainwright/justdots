@@ -1,18 +1,13 @@
 
-
-
-#. /home/.nix-profile/etc/profile.d/nix.sh
-
-
-
+xinput set-prop "Elan Touchpad" "Synaptics Finger" 5 10 50
 setxkbmap gb
 
 
-
-. /home/tom/dotfiles/shells/bash/lib/aliases
-. /home/tom/dotfiles/shells/bash/lib/environment
-. /home/tom/dotfiles/shells/extraterm-commands/setup_extraterm_bash.sh
-. /home/tom/dotfiles/shells/bash/lib/fzy
+export $df=/core
+. $df/shells/bash/lib/aliases
+. $df/shells/bash/lib/environment
+. $df/shells/extraterm-commands/setup_extraterm_bash.sh
+. $df/shells/bash/lib/fzy
 xcape_single
 
 
@@ -27,10 +22,3 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u:::\[\033[00m\]:\[\033[0
 PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u:::! \w\a\]$PS1"
 test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
 
-export GOROOT=$HOME/go
-export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/gocode
-export PATH=$PATH:$GOPATH/bin
-#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
- #       source /etc/profile.d/vte.sh
-#fi
