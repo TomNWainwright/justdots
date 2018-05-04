@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-sudo apt-get install -y gnome-logs gnome-pie xfce4-terminal keepass2 emelfm2 bleachbit medit
-

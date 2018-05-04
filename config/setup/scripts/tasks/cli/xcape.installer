@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+
+/core/setup/scripts/package-lists/build_tools.packages
+/core/setup/scripts/package-lists/download_tools.packages
+sudo apt-get install -y slibxtst-dev libx11-dev libxtst-dev libxi-dev
+	
+git clone https://github.com/alols/xcape.git 
+cd xcape
+make
+sudo make install
+cd ..
+rm -rf xcape

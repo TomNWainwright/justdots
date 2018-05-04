@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+/core/setup/scripts/package-lists/archive_tools.packages
+/core/setup/scripts/package-lists/build_tools.packages
+/core/setup/scripts/package-lists/download_tools.packages
+
+
+sudo apt-get install -y xsltproc  txt2tags libtool libglib2.0-dev  bgtk2.0-dev  libxml2-dev python2.7-dev  python-gtk2-dev   intltool 
+
+wget http://bitbucket.org/medit/medit/get/tip.tar.bz2
+tar xvjf tip.tar.bz2
+
+cd medit-medit*
+./autogen.sh
+./configure --enable-dev-mode
+make
+sudo make install
+cd ..
+rm -rf medit-medi* tip.tar.bz2

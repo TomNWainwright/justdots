@@ -1,0 +1,17 @@
+
+. /core/config/shells/bash/lib/environment
+
+
+
+. $df/config/shells/bash/lib/aliases
+. $df/config/shells/bash/lib/fzy
+xcape_single
+
+
+HISTCONTROL=ignoredups:ignorespace
+HISTSIZE=1000
+HISTFILESIZE=2000
+xinput set-prop "Elan Touchpad" "Synaptics Finger" 5 10 50
+setxkbmap gb
+
+

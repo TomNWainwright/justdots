@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+
+cd ~
+cd /core
+./install
+#mkdir -p /home/tom/.local/share/applications
+#rm -rf /home/tom/.local/share/applications
+#sudo rm -rf /usr/share/applications
+#sudo ln -s /core/desktpop_files /usr/share/applications
+#ln -s /core/desktpop_files /home/tom/.local/share/applications
+cd ~

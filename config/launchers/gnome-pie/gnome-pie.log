@@ -1,0 +1,84 @@
+[2018:04:21:01:37:00:878016 WARNING] Failed to find pie configuration file "pies.conf"! (This should only happen when Gnome-Pie is started for the first time...)
+[2018:04:21:01:37:00:878189 WARNING] Failed to find settings file "gnome-pie.conf"! (This should only happen when Gnome-Pie is started for the first time...)
+[2018:04:21:01:37:00:879940 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:01:37:00:912592 MESSAGE] Creating new configuration file in "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:01:37:00:921443  ERROR ] gnome_pie_action_registry_new_for_app_info: assertion 'info != NULL' failed
+[2018:04:21:01:37:00:921543  ERROR ] gnome_pie_pie_add_action: assertion 'action != NULL' failed
+[2018:04:21:01:37:00:921660  ERROR ] gnome_pie_action_registry_new_for_app_info: assertion 'info != NULL' failed
+[2018:04:21:01:37:00:921719  ERROR ] gnome_pie_pie_add_action: assertion 'action != NULL' failed
+[2018:04:21:01:37:00:921793  ERROR ] gnome_pie_action_registry_new_for_app_info: assertion 'info != NULL' failed
+[2018:04:21:01:37:00:921851  ERROR ] gnome_pie_pie_add_action: assertion 'action != NULL' failed
+[2018:04:21:01:37:00:974538  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:37:00:974702  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:37:00:975048  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:37:00:975128  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:37:00:976104  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:37:00:976220  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:37:00:979706 MESSAGE] Saving Pies to "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:01:37:01:276642 WARNING] Error loading settings: gnome-pie.conf not found! Using defaults...
+[2018:04:21:01:37:01:311648 WARNING] No theme specified! Using default...
+[2018:04:21:01:37:01:329811 MESSAGE] Started happily...
+[2018:04:21:01:37:13:061955 MESSAGE] Saving Pies to "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:01:57:26:167434 MESSAGE] Main menu changed...
+[2018:04:21:01:57:26:175749  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:176089  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:57:26:177046  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:177346  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:57:26:179915  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:180202  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:57:26:726236 MESSAGE] Main menu changed...
+[2018:04:21:01:57:26:734675  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:735027  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:57:26:735858  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:736124  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:57:26:738495  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:57:26:738742  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:01:59:46:269854 MESSAGE] Main menu changed...
+[2018:04:21:01:59:46:273367  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:01:59:46:273470  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:02:03:42:876923 MESSAGE] Main menu changed...
+[2018:04:21:02:03:42:883500  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:02:03:42:883756  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:02:11:14:779522 MESSAGE] Main menu changed...
+[2018:04:21:02:11:14:782171  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:02:11:14:782278  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:02:21:03:698813 MESSAGE] Main menu changed...
+[2018:04:21:02:21:03:702460  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:02:21:03:702557  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:02:21:23:068359 MESSAGE] Main menu changed...
+[2018:04:21:02:21:23:072055  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:02:21:23:072160  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:02:21:26:372039 MESSAGE] Main menu changed...
+[2018:04:21:02:21:26:374419  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:02:21:26:374483  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:03:09:47:426929 MESSAGE] Main menu changed...
+[2018:04:21:03:09:47:430427  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:03:09:47:430542  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:10:12:52:188272 MESSAGE] Main menu changed...
+[2018:04:21:10:12:52:193858  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:10:12:52:193939  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:11:04:14:664370 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:11:04:14:668160 MESSAGE] Loading Pies from "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:11:04:14:754406  ERROR ] gnome_pie_app_action_construct: assertion 'icon != NULL' failed
+[2018:04:21:11:04:14:754526  ERROR ] gnome_pie_action_group_add_action: assertion 'new_action != NULL' failed
+[2018:04:21:11:04:15:129587 MESSAGE] Started happily...
+[2018:04:21:11:06:58:864622 WARNING] Icon "jockey" not found! Using default icon...
+[2018:04:21:11:07:20:389239 MESSAGE] Error loading image file: Failed to open file 'emelfm2/emelfm2_48': No such file or directory
+[2018:04:21:11:07:20:389538 MESSAGE] Error loading image file: Failed to open file 'emelfm2/emelfm2_48': No such file or directory
+[2018:04:21:11:11:23:512234 MESSAGE] Saving Pies to "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:11:11:47:048599 WARNING] Icon "xfce terminal" not found! Using default icon...
+[2018:04:21:11:11:47:076818 WARNING] Icon "eric6" not found! Using default icon...
+[2018:04:21:11:11:47:085337 WARNING] Icon "web" not found! Using default icon...
+[2018:04:21:11:11:47:091014 WARNING] Icon "installed software — apper" not found! Using default icon...
+[2018:04:21:16:45:48:193482 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:16:45:48:201810 MESSAGE] Loading Pies from "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:16:45:49:012820 MESSAGE] Started happily...
+[2018:04:21:17:00:10:593039 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:17:00:10:608961 MESSAGE] Loading Pies from "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:17:00:12:052813 MESSAGE] Started happily...
+[2018:04:21:19:46:34:412154 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:19:46:34:412987 MESSAGE] Loading Pies from "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:19:46:35:256713 MESSAGE] Started happily...
+[2018:04:21:21:38:38:924029 MESSAGE] Welcome to Gnome-Pie 0.7.1!
+[2018:04:21:21:38:38:924807 MESSAGE] Loading Pies from "/home/tom/.config/gnome-pie/pies.conf".
+[2018:04:21:21:38:40:043416 MESSAGE] Started happily...

@@ -1,3 +1,0 @@
-#!/bin/bash
-/home/tom/dotfiles/setup/scripts/package-lists/download_tools.packages
-curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash

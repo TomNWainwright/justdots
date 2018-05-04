@@ -1,6 +1,0 @@
-*.bak
-.~
-local.lua
-config.db
-
-runtest.sh

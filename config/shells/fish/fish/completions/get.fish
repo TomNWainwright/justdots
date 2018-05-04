@@ -1,0 +1,1 @@
+/home/tom/.config/fisherman/get/completions/get.fish
