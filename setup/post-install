@@ -49,4 +49,5 @@ sudo chown -R tom:tom /home/tom/.cache
 
 post_install_function
 $df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
-
+. "$HOME/.bashrc"
+mkdir -p  $QUICKNOTESFILE
