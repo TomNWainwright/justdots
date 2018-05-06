@@ -202,7 +202,7 @@ sudo apt-get install -fy
 xcape_install () {
 build_tools
 download_tools
-sudo apt-get install -y slibxtst-dev libx11-dev libxtst-dev libxi-dev
+sudo apt-get install -y  libx11-dev libxtst-dev libxi-dev
 	
 git clone https://github.com/alols/xcape.git
 cd xcape

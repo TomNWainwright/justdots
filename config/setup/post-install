@@ -1,6 +1,6 @@
 #!/bin/bash
 df=/core
-SETUP=$df/config/setup"
+SETUP="$df/config/setup"
 TASKS="$SETUP/scripts/tasks"
 LISTS="$SETUP/setup/scripts/package_lists"
 TASKS="$SETUP/setup/scripts/tasks"
