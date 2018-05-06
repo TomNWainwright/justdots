@@ -24,7 +24,7 @@ automation_install
 applications_install
 sudo chown -R tom:tom /home/tom/.cache
 
-nemo_latest_install
+#nemo_latest_install
 jumpapp_install
 fish_install
 conda_install
@@ -48,6 +48,5 @@ sudo chown -R tom:tom /home/tom/.cache
 
 
 post_install_function
-cd $df
-./install
-cd ~
+$df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
+
