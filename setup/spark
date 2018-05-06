@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 sudo apt-get install -y git
 git clone https://github.com/TomNWainwright/justdots dotfiles
-/core/config/setup/post-install
+/core/setup/post-install

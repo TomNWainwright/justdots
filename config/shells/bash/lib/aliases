@@ -105,3 +105,5 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias pgrep2="ps -ef | grep"
 alias hgrep='history | grep'
+
+alias dotbot="$df/setup/dotbot/dotbot/bin/dotbot  -c \"$df/setup/dotbot/install.conf.yaml\" -d \"$df\""
