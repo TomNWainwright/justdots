@@ -1,6 +1,6 @@
 #!/bin/bash 
 
-
+df=/core
 alias df='cd /home/tom/dotfiles'
 
 alias ......='cd ../../../../..'
