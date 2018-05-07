@@ -30,6 +30,7 @@ fish_install
 conda_install
 sudo chown -R tom:tom /home/tom/.cache
 
+skippy_xd_install
 
 fd_install
 xcape_install

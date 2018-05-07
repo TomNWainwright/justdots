@@ -193,10 +193,11 @@ cd~
 
 fd_install () {
 download_tools
-alias unpack='sudo dpkg -i '
+alias unpack='sudo dpkg - i '
 wget https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb
 unpack fd-musl_7.0.0_amd64.deb
 sudo apt-get install -fy
+rm fd-musl_7.0.0_amd64.deb
 }
 
 xcape_install () {
@@ -212,4 +213,23 @@ cd ..
 rm -rf xcape
 
 
+}
+
+
+skippy_xd_install () {
+
+
+download_tools
+alias unpack='sudo dpkg -i '
+
+
+wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb 
+unpack  /tmp/libpng12.deb
+rm /tmp/libpng12.deb
+
+
+wget https://launchpad.net/~landronimirc/+archive/ubuntu/skippy-xd-daily/+build/9668406/+files/skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
+unpack skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
+sudo apt-get install -fy
+rm  skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
 }
