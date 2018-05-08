@@ -1,0 +1,48 @@
+[Data Source]
+DisplayName=tom.n.wainwright@googlemail.com
+Enabled=true
+Parent=1df003fdfef6cad13e7abd25d9877fe2d3c4a55d
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://3ffd4cfb35d9f1aa8adce673915a0abc533cf5c4/%5bGoogle%20Mail%5d/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+
+[Mail Identity]
+Address=tom.n.wainwright@googlemail.com
+Aliases=
+Name=Tom Wainwright
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=15213a90f5a8333708aab9dcb49e74caa0fbab81
+RepliesToOriginFolder=false
+UseSentFolder=true
+
+[Pretty Good Privacy (OpenPGP)]
+AlwaysTrust=false
+EncryptToSelf=true
+KeyId=
+SigningAlgorithm=
+SignByDefault=false
+EncryptByDefault=false
+PreferInline=false
+
+[Message Disposition Notifications]
+ResponsePolicy=ask
+
+[Secure MIME (S/MIME)]
+EncryptionCertificate=
+EncryptByDefault=false
+EncryptToSelf=true
+SigningAlgorithm=
+SigningCertificate=
+SignByDefault=false

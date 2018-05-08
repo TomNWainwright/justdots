@@ -1,0 +1,80 @@
+def name -params 2 %{
+    def -allow-override %arg{2} -docstring "exec %arg{1}" "exec -no-hooks %arg{1}"
+}
+
+
+# ,s to switch to *debug* and back
+def -hidden toggle_debug %{%sh{
+    if [ "$kak_bufname" = '*debug*' ]
+    then
+        printf '%s\n' 'exec "<c-o>"'
+    else
+        printf '%s\n' 'buffer *debug*'
+    fi
+}}
+
+map global user d ':toggle_debug<ret>'
+
+
+
+
+
+def import -allow-override -params 1 %{
+    source %sh{echo ${kak_config}/$1.kak}
+}
+
+
+#name ';'          "enter-command-prompt"
+#name :        "reduce-selections-to-their-cursor"
+
+
+
+# Help on everything
+set global autoinfo command|onkey|normal
+
+set global modelinefmt '{title}%val{bufname}{StatusLine} %val{cursor_line}:%val{cursor_char_column} [{StatusLineValue}%opt{filetype}{StatusLine}]'
+
+# Ignored files
+set global ignored_files '\..+|.+~|.+\.(?:o|so|a|swp)'
+
+map global normal '#' :comment-line<ret>
+map global normal <backspace> 'i<backspace><esc>'
+
+
+# key bindings
+map global user b '<esc>:buffer ' -docstring "Select a buffer"
+map global user p '!copyq paste<ret>' -docstring "Paste X selection"
+#map global user c '<esc><a-s>:comment-line<ret><a-h><a-m>' -docstring "Comment the current or selected lines"
+map global user c '<a-|>copyq copy -i<ret>;' -docstring "Copy selection to X clipboard"
+
+map global user f '<a-i>w*n' -docstring "Search current word in buffer"
+
+
+
+
+map global user 1 ":to-buffer<space>0<ret>"
+map global user 2 ":to-buffer<space>1<ret>"
+map global user 3 ":to-buffer<space>2<ret>"
+map global user 4 ":to-buffer<space>3<ret>"
+map global user 5 ":to-buffer<space>4<ret>"
+map global user 6 ":to-buffer<space>5<ret>"
+map global user 7 ":to-buffer<space>6<ret>"
+map global user 8 ":to-buffer<space>7<ret>"
+map global user 9 ":to-buffer<space>8<ret>"
+map global user 0 ":to-buffer<space>9<ret>"
+
+
+hook global InsertChar \t %{
+    %sh{
+        if [ "${kak_opt_filetype}" = "makefile" ]; then
+            true
+        else
+            echo "exec -draft h@"
+        fi
+    }
+}
+
+# set global termcmd "xfce4-terminal -x sh -c"
+# set global termcmd "xfce4-terminal -e "
+
+

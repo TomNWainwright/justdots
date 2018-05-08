@@ -21,3 +21,6 @@ xinput set-prop "Elan Touchpad" "Synaptics Finger" 5 10 50
 setxkbmap gb
 
 
+
+
+export LD_LIBRARYPATH="$LD_LIBRARYPATH:/etc/ld.so.conf"

@@ -34,6 +34,7 @@ skippy_xd_install
 
 fd_install
 xcape_install
+kakoune_install
 
 misc_install
 # purge_packages

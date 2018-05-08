@@ -1,0 +1,28 @@
+[Data Source]
+DisplayName=tw16402@my.bristol.ac.uk
+Enabled=true
+Parent=1749e238e8af8fda20a08ad4118279db13a92ece
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://f08697c83c18804f372c3cd5553f16b44e2b3f08/%5bGmail%5d/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+
+[Mail Identity]
+Address=tw16402@my.bristol.ac.uk
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=025b880c2d153fd905ba8973761eca1243b27c86
+RepliesToOriginFolder=false
+UseSentFolder=true

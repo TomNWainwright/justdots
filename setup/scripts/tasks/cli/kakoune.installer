@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+install_kakoune() {
+build_tools
+download_tools
+sudo apt-get install -y xlstproc  libncursesw5-dev
+sudo apt-get install -y --no-install-recommends  asciidoc
+git clone https://github.com/mawww/kakoune.git && cd kakoune/src
+make
+PREFIX=$HOME/.local make install
+cd ..
+cd ..
+rm -rf kakoune
+
+sudo ln -s ~/.local/share/kak /usr/share/kak 
+
+}

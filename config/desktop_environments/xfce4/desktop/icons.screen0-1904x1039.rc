@@ -1,0 +1,23 @@
+[xfdesktop-version-4.10.3+-rcfile_format]
+4.10.3+=true
+
+[google-drive://tom.n.wainwright@googlemail.com/]
+row=3
+col=0
+
+[google-drive://tw16402@my.bristol.ac.uk/]
+row=4
+col=0
+
+[Rubbish Bin]
+row=0
+col=0
+
+[/]
+row=1
+col=0
+
+[/home/tom]
+row=2
+col=0
+

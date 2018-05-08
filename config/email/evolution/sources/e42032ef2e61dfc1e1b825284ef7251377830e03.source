@@ -1,0 +1,34 @@
+[Data Source]
+DisplayName=Tom.n.wainwright@gmail.com
+Enabled=false
+Parent=
+
+[Authentication]
+Host=
+Method=Google
+Port=0
+ProxyUid=system-proxy
+RememberPassword=true
+User=Tom.n.wainwright@gmail.com
+CredentialName=
+
+[Collection]
+BackendName=google
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=Tom.n.wainwright@gmail.com
+MailEnabled=true
+CalendarUrl=
+ContactsUrl=
+
+[WebDAV Backend]
+AvoidIfmatch=false
+CalendarAutoSchedule=false
+DisplayName=
+EmailAddress=
+ResourcePath=
+ResourceQuery=
+SslTrust=
+
+[Security]
+Method=none

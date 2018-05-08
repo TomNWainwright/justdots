@@ -1,7 +1,7 @@
 #!/bin/bash
 command -v xcape >/dev/null 2>&1 || { echo "I require xcape but it's not installed.  Aborting." >&2; exit 1; }
 
-if pgrep  -x xcape
+if ! pgrep  -x xcape
 then
 xcape -e 'Shift_L=Control_L|comma;Control_L=Control_L|grave;Alt_L=Control_L|semicolon;Super_L=Super_L|1;ISO_Level3_Shift=Alt_L|comma;Shift_R=Alt_L|grave;Control_R=Alt_L|semicolon'
 fi

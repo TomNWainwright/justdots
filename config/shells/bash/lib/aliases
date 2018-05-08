@@ -67,7 +67,7 @@ alias loopkate='fv -oc Kate.AppImage'
 alias ~='cd ~'
 
 alias p='python'
-alias path='echo -e ${PATH//:/}'
+alias path='echo "${PATH//:/$'\n'}"'
 
 
 alias reload='exec ${SHELL} -l'

@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=tom.n.wainwright@googlemail.com
+Enabled=true
+Parent=1df003fdfef6cad13e7abd25d9877fe2d3c4a55d
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=smtp.gmail.com
+Method=XOAUTH2
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=tom.n.wainwright@googlemail.com
+CredentialName=
+
+[Security]
+Method=ssl-on-alternate-port

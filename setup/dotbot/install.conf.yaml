@@ -10,21 +10,31 @@
 - 
   link:
     
-    ~/.config/editors/kate/katepartrc: config/editors/kate/katepartrc
+    ~/.config/katepartrc: config/editors/kate/katepartrc
     ~/.config/konsolerc: config/terminals/konsolerc
     ~/.config/katerc: config/editors/kate/katerc
     ~/.config/kateschemarc: config/editors/kate/kateschemarc
     ~/.config/katesyntaxhighlightingrc: config/editors/kate/katesyntaxhighlightingrc
+    ~/.config/tea: config/editors/tea
+    ~/.config/KeePass: config/security/KeePass
+    ~/.config/keepassxc: config/security/keepassxc
+    ~/.config/goa-1.0: config/account_management/goa-1.0
+    ~/.config/kak: config/editors/kak
     ~/.gitconfig: config/utilities/gitconfig
+    ~/.config/copyq: config/utilities/copyq
     ~/.bashrc: config/shells/bash/bashrc
     ~/.profile: config/shells/bash/profile
     ~/.config/rofi: config/launchers/rofi
+    ~/.config/skippy-xd: config/window_switchers/skippy-xd
+    ~/.config/evolution: config/launchers/rofi
+    ~/.config/nemo: config/file_managers/nemo
+    ~/.config/xfce4: config/desktop_environments
     ~/.config/doublecmd: config/file_managers/doublecmd
     ~/.config/mimeapps.list: config/system_files/mimeapps.list
     ~/.config/libreoffice: config/editors/libreoffice
     ~/.config/gnome-pie: config/launchers/gnome-pie
     ~/.config/fish: config/shells/fish/fish
-    ~/.config/fisherman: config/shells/fish/fisherman
+  #  ~/.config/fisherman: config/shells/fish/fisherman
     ~/.via/xfce4: config/launchers/via
     ~/.config/micro: config/editors/micro
     ~/.config/dmenu-extended: config/launchers/dmenu-extended
@@ -33,5 +43,6 @@
     ~/.config/google-chrome/Default/Preferences: config/browsers/chrome_prefs
     ~/.config/opera/Preferences: config/browsers/opera_prefs
     ~/bins:   data/bins
+    ~/.local/bin: data/bins/bin
 - 
   shell: []

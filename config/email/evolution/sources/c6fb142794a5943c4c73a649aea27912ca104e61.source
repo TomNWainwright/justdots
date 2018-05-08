@@ -1,0 +1,57 @@
+[Data Source]
+DisplayName=Tom.n.wainwright@gmail.com
+Enabled=false
+Parent=e42032ef2e61dfc1e1b825284ef7251377830e03
+
+[Offline]
+StaySynchronized=false
+
+[Refresh]
+Enabled=true
+IntervalMinutes=60
+
+[Authentication]
+Host=imap.googlemail.com
+Method=Google
+Port=993
+ProxyUid=system-proxy
+RememberPassword=true
+User=Tom.n.wainwright@gmail.com
+CredentialName=
+
+[Mail Account]
+BackendName=imapx
+IdentityUid=58aef4786c0bfcc511ec1ec7fea5d165b1e6342e
+ArchiveFolder=
+NeedsInitialSetup=true
+
+[Security]
+Method=ssl-on-alternate-port
+
+[Imapx Backend]
+FilterInbox=true
+StoreChangesInterval=3
+LimitByAge=false
+LimitUnit=years
+LimitValue=1
+UseMultiFetch=false
+CheckAll=false
+CheckSubscribed=false
+ConcurrentConnections=3
+FetchOrder=ascending
+FilterAll=false
+FilterJunk=false
+FilterJunkInbox=false
+Namespace=
+RealJunkPath=
+RealTrashPath=
+ShellCommand=ssh -C -l %u %h exec /usr/sbin/imapd
+UseIdle=false
+UseNamespace=false
+UseQresync=false
+UseRealJunkPath=false
+UseRealTrashPath=false
+UseShellCommand=false
+UseSubscriptions=false
+IgnoreOtherUsersNamespace=false
+IgnoreSharedFoldersNamespace=false

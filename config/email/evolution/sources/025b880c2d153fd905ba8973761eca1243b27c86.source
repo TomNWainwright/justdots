@@ -1,0 +1,19 @@
+[Data Source]
+DisplayName=tw16402@my.bristol.ac.uk
+Enabled=true
+Parent=1749e238e8af8fda20a08ad4118279db13a92ece
+
+[Mail Transport]
+BackendName=smtp
+
+[Authentication]
+Host=smtp.gmail.com
+Method=XOAUTH2
+Port=465
+ProxyUid=system-proxy
+RememberPassword=true
+User=tw16402@my.bristol.ac.uk
+CredentialName=
+
+[Security]
+Method=ssl-on-alternate-port
