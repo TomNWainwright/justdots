@@ -1,28 +1,28 @@
 [Data Source]
-DisplayName=Unnamed
+DisplayName=tom.n.wainwright@googlemail.com
 Enabled=true
-Parent=
+Parent=3da816d79405c3ff4e5501868590de354cd52c9d
 
 [Offline]
 StaySynchronized=false
 
 [Authentication]
-Host=
-Method=none
-Port=0
+Host=imap.gmail.com
+Method=XOAUTH2
+Port=993
 ProxyUid=system-proxy
 RememberPassword=true
-User=
+User=tom.n.wainwright@googlemail.com
 CredentialName=
 
 [Mail Account]
-BackendName=
-IdentityUid=self
+BackendName=imapx
+IdentityUid=a89281ca5c7721701e505af02ee256e180303fce
 ArchiveFolder=
-NeedsInitialSetup=true
+NeedsInitialSetup=false
 
 [Security]
-Method=none
+Method=ssl-on-alternate-port
 
 [Imapx Backend]
 FilterInbox=true
@@ -39,14 +39,14 @@ FilterAll=false
 FilterJunk=false
 FilterJunkInbox=false
 Namespace=
-RealJunkPath=
-RealTrashPath=
+RealJunkPath=[Google Mail]/Spam
+RealTrashPath=[Google Mail]/Bin
 ShellCommand=ssh -C -l %u %h exec /usr/sbin/imapd
 UseIdle=false
 UseNamespace=false
 UseQresync=false
-UseRealJunkPath=false
-UseRealTrashPath=false
+UseRealJunkPath=true
+UseRealTrashPath=true
 UseShellCommand=false
 UseSubscriptions=false
 IgnoreOtherUsersNamespace=false

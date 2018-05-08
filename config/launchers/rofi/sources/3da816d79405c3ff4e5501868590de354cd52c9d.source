@@ -1,23 +1,14 @@
 [Data Source]
-DisplayName=tom.n.wainwright@googlemail.com
+DisplayName=Unnamed
 Enabled=true
 Parent=
 
 [GNOME Online Accounts]
-AccountId=account_1525727471_0
-CalendarUrl=https://apidata.googleusercontent.com/caldav/v2/tom.n.wainwright@googlemail.com/user
-ContactsUrl=https://www.googleapis.com/.well-known/carddav
-Name=
-Address=tom.n.wainwright@googlemail.com
-
-[Collection]
-BackendName=google
-CalendarEnabled=true
-ContactsEnabled=true
-Identity=tom.n.wainwright@googlemail.com
-MailEnabled=true
+AccountId=
 CalendarUrl=
 ContactsUrl=
+Name=
+Address=
 
 [WebDAV Backend]
 AvoidIfmatch=false
@@ -30,12 +21,21 @@ SslTrust=
 
 [Authentication]
 Host=
-Method=OAuth2
+Method=plain/password
 Port=0
 ProxyUid=system-proxy
 RememberPassword=true
 User=
 CredentialName=
+
+[Collection]
+BackendName=
+CalendarEnabled=true
+ContactsEnabled=true
+Identity=
+MailEnabled=true
+CalendarUrl=
+ContactsUrl=
 
 [Security]
 Method=none

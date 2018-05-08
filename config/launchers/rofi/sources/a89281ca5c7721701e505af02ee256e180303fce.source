@@ -1,12 +1,12 @@
 [Data Source]
-DisplayName=tom.n.wainwright@googlemail.com
+DisplayName=Unnamed
 Enabled=true
-Parent=3da816d79405c3ff4e5501868590de354cd52c9d
+Parent=
 
 [Mail Composition]
 Bcc=
 Cc=
-DraftsFolder=folder://f2328ef003b57b371ffe48cb95b65cbe30ffda70/%5bGoogle%20Mail%5d/Drafts
+DraftsFolder=
 ReplyStyle=default
 SignImip=true
 TemplatesFolder=
@@ -14,7 +14,7 @@ StartBottom=inconsistent
 TopSignature=inconsistent
 
 [Mail Identity]
-Address=tom.n.wainwright@googlemail.com
+Address=
 Aliases=
 Name=
 Organization=
@@ -22,7 +22,7 @@ ReplyTo=
 SignatureUid=none
 
 [Mail Submission]
-SentFolder=folder://local/Sent
-TransportUid=4ab70e5e1fa1e785fdf1fc1599ff3f224adcf103
+SentFolder=
+TransportUid=
 RepliesToOriginFolder=false
 UseSentFolder=true
