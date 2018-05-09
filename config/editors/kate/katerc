@@ -1,7 +1,38 @@
+[Desktop Entry]
+DefaultProfile=
+
+[Favorite Profiles]
+Favorites=
+
+[General]
+Config Revision=10
+Days Meta Infos=30
+Last Session=
+Save Meta Infos=true
+Show Full Path in Title=false
+Show Menu Bar=true
+Show Status Bar=true
+Show Tab Bar=true
+
 [KFileDialog Settings]
-Recent Files[$e]=profile,file:///core/data/bins/clibin/xcape_single,file:///core/config/shells/bash/lib/environment,file:///core/config/shells/bash/bashrc
-Recent URLs[$e]=file:///core/config/setup/scripts/tasks/,file:///core/config/shells/bash/,file:///core/config/shells/bash/lib/,file:///core/data/bins/clibin/
+Recent Files[$e]=profile,file:///core/README.md,file:$HOME/bins/bin/focus_history.py,file:$HOME/bins/bin/focus_history,file:$HOME/bins/bin/focus_track,file:$HOME/bins/bin/focus-track,file:$HOME/bins/bin/xcape_single,file:$HOME/kdetricks,file:///core/config/shells/bash/lib/environment,file:///core/config/shells/bash/bashrc
+Recent URLs[$e]=file:///core/config/shells/bash/,file:///core/config/shells/bash/lib/,file:$HOME/bins/bin/,file:$HOME/bins/,file:$HOME/.config/,file:///core/
 
 [KTextEditor::Search]
-Replace History=,\\\\n,$df,\s
-Search History=update.*\\\\n,\\\\n+,^Certificate .*,^Setting .*,^Preparing .*,^Selecting .*,^Unpacking .*,^Get::.*,^Get:.*,^W: .*,file:///core,=
+Replace History=dnf,aaa,\\\\n}\\\\n\\\\n...  ()   {,\\\\n}\\\\n...  ()   {,,\\\\n,$df,\s
+Search History=apt-get,\\\\.\\\\.\\\\.,#!/usr/bin/env sh,#!/usr/bin/env sh\n,update.*\\\\n,\\\\n+,^Certificate .*,^Setting .*,^Preparing .*,^Selecting .*,^Unpacking .*,^Get::.*,^Get:.*,^W: .*,file:///core,=
+
+[MainWindow]
+Height 1080=1015
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 1920=956
+Window-Maximized 1080x1920=true
+
+[filetree]
+editShade=179,218,246
+listMode=false
+shadingEnabled=true
+showFullPathOnRoots=false
+sortRole=0
+viewShade=193,208,209

@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-sudo apt-get install -y  software-properties-common 
-
-sudo apt-get  update
-sudo apt-get upgrade -y
-sudo apt-add-repository -y ppa:embrosyn/cinnamon
-sudo apt-get install -y cinnamon

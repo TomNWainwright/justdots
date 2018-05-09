@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+$df=/core
+
+$df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"

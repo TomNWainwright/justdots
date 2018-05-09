@@ -1,0 +1,81 @@
+#!/usr/bin/env sh
+sudo apt-get install -y  gnome-pie  keepass2 emelfm2 bleachbit
+
+#!/usr/bin/env sh
+
+sudo apt-get install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+#!/usr/bin/env sh
+
+sudo apt-get install -y wmctrl xdotool
+#!/usr/bin/env sh
+
+sudo apt-get install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+#!/usr/bin/env sh
+sudo apt-get install -y curl git wget
+#!/usr/bin/env sh
+
+sudo apt-get install -y bzr deja-dup diffutils fdupes fontconfig fonts-indic gawk libxtst-dev grep gvfs less libgl1-mesa-dev m4 mime-support nfs-common nmap  pv  rsync  symlinks tlp x11-apps xca xdg-utils libnotify-bin inotify-tools cifs-utils
+#!/usr/bin/env sh
+
+sudo apt-get install -y aptitude synaptic
+#!/usr/bin/env sh
+sudo apt-get install -y ruby perl
+
+#!/usr/bin/env sh
+
+sudo apt-get purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk#!/usr/bin/env sh
+sudo apt-get install -y awesome
+#!/usr/bin/env sh
+sudo apt-get install -y  gnome-pie  keepass2 emelfm2 bleachbit
+
+#!/usr/bin/env sh
+
+sudo apt-get install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+#!/usr/bin/env sh
+
+sudo apt-get install -y wmctrl xdotool
+#!/usr/bin/env sh
+
+sudo apt-get install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+#!/usr/bin/env sh
+sudo apt-get install -y curl git wget
+#!/usr/bin/env sh
+
+sudo apt-get install -y bzr deja-dup diffutils fdupes fontconfig fonts-indic gawk libxtst-dev grep gvfs less libgl1-mesa-dev m4 mime-support nfs-common nmap  pv  rsync  symlinks tlp x11-apps xca xdg-utils libnotify-bin inotify-tools cifs-utils
+#!/usr/bin/env sh
+
+sudo apt-get install -y aptitude synaptic
+#!/usr/bin/env sh
+sudo apt-get install -y ruby perl
+
+#!/usr/bin/env sh
+
+sudo apt-get purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk#!/usr/bin/env sh
+sudo apt-get install -y awesome
+#!/usr/bin/env sh
+sudo apt-get install -y  gnome-pie  keepass2 emelfm2 bleachbit
+
+#!/usr/bin/env sh
+
+sudo apt-get install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+#!/usr/bin/env sh
+
+sudo apt-get install -y wmctrl xdotool
+#!/usr/bin/env sh
+
+sudo apt-get install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+#!/usr/bin/env sh
+sudo apt-get install -y curl git wget
+#!/usr/bin/env sh
+
+sudo apt-get install -y bzr deja-dup diffutils fdupes fontconfig fonts-indic gawk libxtst-dev grep gvfs less libgl1-mesa-dev m4 mime-support nfs-common nmap  pv  rsync  symlinks tlp x11-apps xca xdg-utils libnotify-bin inotify-tools cifs-utils
+#!/usr/bin/env sh
+
+sudo apt-get install -y aptitude synaptic
+#!/usr/bin/env sh
+sudo apt-get install -y ruby perl
+
+#!/usr/bin/env sh
+
+sudo apt-get purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk#!/usr/bin/env sh
+sudo apt-get install -y awesome

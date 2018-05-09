@@ -1,1 +1,0 @@
-sudo apt-get install xdotool && wget https://raw.github.com/hotice/webupd8/master/skippy-xd-fix -O /tmp/skippy-xd-fix && sudo install /tmp/skippy-xd-fix /usr/local/bin/

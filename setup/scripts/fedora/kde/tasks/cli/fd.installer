@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+/core/setup/scripts/package-lists/download_tools.packages
+alias unpack='sudo dpkg -i '
+
+
+wget https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb
+
+unpack fd-musl_7.0.0_amd64.deb
+
+
+
+
+
+sudo apt-get install -fy

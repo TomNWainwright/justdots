@@ -7,21 +7,22 @@ TASKS="$SETUP/setup/scripts/tasks"
 
 # for f in $TASKS; do source $f; done
 # for f in $PACKAGELISTS; do source $f; done
-. $SETUP/merged
+. $SETUP/scripts/fedora/kde/tasks/install_functions
 
 post_install_function() {
 
 
 
-download_tools
-build_tools
-package_tools
+install_download_tools
+install_build_tools
 sudo chown -R tom:tom /home/tom/.cache
 
-archive_tools
-languages_install
-automation_install
-applications_install
+install_archive_tools
+install_prog_langs
+install_automation_tools
+install_gnome-pie
+install_bleachbit
+install_keepass2
 sudo chown -R tom:tom /home/tom/.cache
 
 #nemo_latest_install
@@ -36,8 +37,7 @@ fd_install
 xcape_install
 kakoune_install
 
-misc_install
-# purge_packages
+# remove_packages
 
 
 

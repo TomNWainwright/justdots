@@ -1,0 +1,55 @@
+#!/bin/bash
+df=/core
+SETUP="$df/setup"
+TASKS="$SETUP/scripts/tasks"
+LISTS="$SETUP/setup/scripts/package_lists"
+TASKS="$SETUP/setup/scripts/tasks"
+
+# for f in $TASKS; do source $f; done
+# for f in $PACKAGELISTS; do source $f; done
+. $SETUP/merged
+
+post_install_function() {
+
+
+
+download_tools
+build_tools
+package_tools
+sudo chown -R tom:tom /home/tom/.cache
+
+archive_tools
+languages_install
+automation_install
+applications_install
+sudo chown -R tom:tom /home/tom/.cache
+
+#nemo_latest_install
+jumpapp_install
+fish_install
+conda_install
+sudo chown -R tom:tom /home/tom/.cache
+
+skippy_xd_install
+
+fd_install
+xcape_install
+kakoune_install
+
+misc_install
+# purge_packages
+
+
+
+sudo chown -R tom:tom /home/tom/.cache
+
+
+
+}
+
+
+
+post_install_function
+$df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
+. "$HOME/.bashrc"
+mkdir -p  $QUICKNOTEFILE

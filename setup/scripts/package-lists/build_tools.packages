@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-
-sudo apt-get install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config

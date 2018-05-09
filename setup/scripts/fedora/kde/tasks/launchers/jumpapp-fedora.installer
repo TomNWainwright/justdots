@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+sudo dnf install -y pandoc rpm-build rpmdevtools
+git clone https://github.com/mkropat/jumpapp.git
+cd jumpapp
+make rpm
+sudo yum localinstall jumpapp*.noarch.rpm

@@ -1,0 +1,62 @@
+
+#!/usr/bin/env sh
+
+
+install_archive_tools  ()   {
+
+sudo dnf install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+
+}
+
+install_automation_tools  ()   {
+
+sudo dnf install -y wmctrl xdotool
+
+}
+
+install_build_tools  ()   {
+
+sudo dnf install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+
+}
+
+install_download_tools  ()   {
+sudo dnf install -y curl git wget
+
+}
+
+
+
+install_prog_langs  ()   {
+sudo dnf install -y ruby perl
+
+
+}
+
+remove_packages ()   {
+
+sudo dnf purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk
+}
+
+
+
+install_gnome-pie  ()   {
+sudo dnf install -y  gnome-pie  keepass2 emelfm2 bleachbit
+}
+
+install_bleachbit  ()   {
+sudo dnf install -y  bleachbit
+}
+
+
+install_keepass2()   {
+sudo dnf install -y   keepass2 
+
+
+}
+
+
+
+install_emelfm2()   {
+sudo dnf install  -y   emelfm2
+}

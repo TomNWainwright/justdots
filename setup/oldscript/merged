@@ -1,0 +1,234 @@
+#!/bin/bash
+
+
+build_tools () {
+sudo apt-get install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+}
+
+purge_packages () {
+sudo apt-get purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk
+}
+
+automation_install () {
+sudo apt-get install -y wmctrl xdotool
+}
+
+package_tools () {
+sudo apt-get install -y aptitude synaptic
+}
+
+archive_tools () {
+sudo apt-get install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+}
+
+languages_install () {
+sudo apt-get install -y ruby perl
+}
+
+download_tools () {
+sudo apt-get install -y curl git wget
+}
+
+applications_install () {
+sudo apt-get install -y  gnome-pie  keepass2  bleachbit
+}
+
+awesome_install () {
+sudo apt-get install -y awesome
+}
+
+misc_install () {
+sudo apt-get install -y bzr deja-dup diffutils fdupes fontconfig fonts-indic gawk libxtst-dev grep gvfs less libgl1-mesa-dev m4 mime-support nfs-common nmap  pv  rsync  symlinks tlp x11-apps xca xdg-utils libnotify-bin inotify-tools cifs-utils
+}
+
+medit_install () {
+download_tools
+build_tools
+download_tools
+sudo apt-get install -y xsltproc  txt2tags libtool libglib2.0-dev  bgtk2.0-dev  libxml2-dev python2.7-dev  python-gtk2-dev   intltool
+wget http://bitbucket.org/medit/medit/get/tip.tar.bz2
+tar xvjf tip.tar.bz2
+cd medit-medit*
+./autogen.sh
+./configure --enable-dev-mode
+make
+sudo make install
+cd ..
+rm -rf medit-medi* tip.tar.bz2
+}
+
+qtile_install () {
+build_tools
+download_tools
+sudo apt-get install -y  libxcb-render0-dev  libffi-dev libpangocairo-1.0-0  python-gobject  python-dbus git libiw-dev
+pip install xcffib
+conda install -y setuptools
+pip install xcffib cairocffi python-mpd2 python-mpd khal  keyring setproctitle iwlib
+git clone git://github.com/qtile/qtile.git
+cd qtile
+python setup.py install
+pip install qtile
+cd ..
+rm -rf qtile
+}
+
+nemo_latest_install () {
+sudo add-apt-repository -y ppa:webupd8team/nemo
+sudo apt-get update
+sudo apt-get install -y nemo
+}
+
+dmenu_extended_install () {
+build_tools
+download_tools
+sudo apt-get install -y suckless-tools xfonts-terminus
+	
+git clone https://github.com/MarkHedleyJones/dmenu-extended
+cd dmenu-extended
+sudo python setup.py install
+cd ..
+sudo rm -rf dmenu-extended
+}
+
+jumpapp_install () {
+sudo apt-get install -y  software-properties-common
+sudo add-apt-repository -y ppa:mkropat/ppa
+sudo apt-get update
+sudo apt-get install -y jumpapp
+}
+
+fish_install () {
+sudo apt-get install -y  software-properties-common
+sudo add-apt-repository -y ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install -y fish
+}
+
+conda_install () {
+download_tools
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh -b
+export PATH="/home/tom/miniconda3/bin:$PATH"
+pip install --upgrade pip
+rm Miniconda3-latest-Linux-x86_64.sh
+}
+
+go_install () {
+download_tools
+curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash
+}
+
+opera_instal () {
+download_tools
+alias unpack='sudo dpkg -i '
+wget https://download1.operacdn.com/pub/opera/desktop/52.0.2871.64/linux/opera-stable_52.0.2871.64_amd64.deb
+unpack opera-stable_52.0.2871.64_amd64.deb
+sudo apt-get install -fy
+rm opera-stable_52.0.2871.64_amd64.deb
+}
+
+chrome_install () {
+download_tools
+alias unpack='sudo dpkg -i '
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+unpack google-chrome-stable_current_amd64.deb
+sudo apt-get install -fy
+}
+
+extraterm_install () {
+cd ~
+download_tools
+download_tools
+mkdir -p apps
+wget https://github.com/sedwards2009/extraterm/releases/download/v0.33.1/extraterm-0.33.1-linux-x64.zip
+unzip extraterm-0.33.1-linux-x64.zip -d apps
+rm  extraterm-0.33.1-linux-x64.zip
+cd ~
+}
+
+termite_install () {
+build_tools
+download_tools
+sudo apt-get install -y \
+	libgtk-3-dev \
+	gtk-doc-tools \
+	gnutls-bin \
+	valac \
+	intltool \
+	libpcre2-dev \
+	libglib3.0-cil-dev \
+	libgnutls28-dev \
+	libgirepository1.0-dev \
+	libxml2-utils \
+	gperf
+	
+git clone --recursive https://github.com/thestinger/termite.git
+git clone https://github.com/thestinger/vte-ng.git
+echo export LIBRARY_PATH="/usr/include/gtk-3.0:$LIBRARY_PATH"
+cd vte-ng && ./autogen.sh && make && sudo make install
+cd ../termite && make && sudo make install
+sudo ldconfig
+sudo mkdir -p /lib/terminfo/x; sudo ln -s \
+/usr/local/share/terminfo/x/xterm-termite \
+/lib/terminfo/x/xterm-termite
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/termite 60
+cd ..
+rm -rf termite vte-ng
+}
+
+cinnamon_install () {
+sudo apt-get install -y  software-properties-common
+sudo apt-get  update
+sudo apt-get upgrade -y
+sudo apt-add-repository -y ppa:embrosyn/cinnamon
+sudo apt-get install -y cinnamon
+}
+
+dotfiles_install () {
+cd ~
+cd /core
+./install
+cd~
+}
+
+fd_install () {
+download_tools
+wget https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb
+sudo dpkg - i  fd-musl_7.0.0_amd64.deb
+sudo apt-get install -fy
+rm fd-musl_7.0.0_amd64.deb
+}
+
+xcape_install () {
+build_tools
+download_tools
+sudo apt-get install -y  libx11-dev libxtst-dev libxi-dev
+	
+git clone https://github.com/alols/xcape.git
+cd xcape
+make
+sudo make install
+cd ..
+rm -rf xcape
+
+
+}
+
+
+skippy_xd_install () {
+
+
+download_tools
+alias unpack='sudo dpkg -i '
+
+
+wget -q -O /tmp/libpng12.deb http://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb 
+unpack  /tmp/libpng12.deb
+rm /tmp/libpng12.deb
+
+
+wget https://launchpad.net/~landronimirc/+archive/ubuntu/skippy-xd-daily/+build/9668406/+files/skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
+unpack skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
+sudo apt-get install -fy
+rm  skippy-xd_0.5.1~git20160429~ubuntu16.04.1_amd64.deb
+}

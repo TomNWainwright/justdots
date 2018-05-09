@@ -5,5 +5,11 @@ DefaultProfile=
 Favorites=
 
 [MainWindow]
-State=AAAA/wAAAAD9AAAAAAAAAoAAAAHCAAAABAAAAAQAAAAIAAAACPwAAAAA
+Height 1080=1015
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+Width 1920=956
+Window-Maximized 1080x1920=true
+
+[Notification Messages]
+CloseAllEmptyTabs=true
