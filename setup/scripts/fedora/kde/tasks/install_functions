@@ -1,18 +1,6 @@
 #!/bin/bash
 
 
-
-git_make_install() {
-build_dir=$2
-if [ -z "$3" ]; then  
-build_dir="$2/$3" 
-fi 
-git clone $1 $2
-make_install $build_dir $2
-}
-
-
-
 make_install() {
 build_dir=$1
 repo_dir=$2
@@ -27,6 +15,18 @@ cd $start_dir
 rm -rf $repo_dir
 
 }
+
+
+git_make_install() {
+build_dir=$2
+if [ -z "$3" ]; then  
+build_dir="$2/$3" 
+fi 
+git clone $1 $2
+make_install $build_dir $2
+}
+
+
 
 
 simple_install_debian () {
