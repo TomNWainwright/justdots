@@ -31,12 +31,13 @@ fish_install
 conda_install
 sudo chown -R tom:tom /home/tom/.cache
 
-skippy_xd_install
+#skippy_xd_install
 
 fd_install
 xcape_install
 kakoune_install
-
+howl_install
+uni_network_setup
 # remove_packages
 
 
@@ -50,6 +51,7 @@ sudo chown -R tom:tom /home/tom/.cache
 
 
 post_install_function
+sudo dnf install -y preload
 $df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
 . "$HOME/.bashrc"
 mkdir -p  $QUICKNOTEFILE

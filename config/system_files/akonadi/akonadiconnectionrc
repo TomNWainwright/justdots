@@ -1,0 +1,10 @@
+[DBUS]
+Address="unix:path=/run/user/1000/bus"
+
+[Data]
+Method=UnixPath
+UnixPath=/tmp/akonadi-tom.rfjx20/akonadiserver-cmd.socket
+
+[Notifications]
+Method=UnixPath
+UnixPath=/tmp/akonadi-tom.rfjx20/akonadiserver-ntf.socket

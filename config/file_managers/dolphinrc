@@ -1,0 +1,40 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
+[DownloadDialog Settings]
+Height 1080=505
+Width 1920=700
+
+[General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
+ShowCopyMoveMenu=true
+Version=200
+ViewPropsTimestamp=2018,5,9,14,50,33
+
+[IconsMode]
+FontWeight=50
+
+[KPropertiesDialog]
+Height 1080=437
+Width 1920=389
+
+[MainWindow]
+Height 1080=500
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAADtPwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAABDAAADtAAAAFoBAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAGxwAAA7QAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width 1920=750
+Window-Maximized 1080x1920=true
+
+[PreviewSettings]
+Plugins=directorythumbnail,imagethumbnail,jpegthumbnail
+
+[SettingsDialog]
+Height 1080=477
+Width 1920=546
+
+[kuick-move]
+Paths[$e]=$HOME/apps/

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doublecmd>
+  <History>
+    <Navigation>
+      <Item>/home/tom/Downloads/</Item>
+      <Item>/home/tom/</Item>
+      <Item>/home/</Item>
+      <Item>/home/tom/2/</Item>
+      <Item>/home/tom/apps/</Item>
+    </Navigation>
+    <CommandLine>
+      <Item>find -mindepth 2   -maxdepth 2 -type  d -exec mv {} "$( dirname {})" \;</Item>
+      <Item>mkdir 1/2/6/8</Item>
+      <Item>touch 1/2/6/8</Item>
+      <Item>echo $COMMANDER_PATH</Item>
+      <Item>e</Item>
+    </CommandLine>
+    <FileMask/>
+    <SearchText/>
+    <SearchTextPath/>
+    <ReplaceText/>
+    <ReplaceTextPath/>
+    <SearchDirectories/>
+    <SearchExcludeFiles/>
+    <SearchExcludeDirectories/>
+  </History>
+</doublecmd>

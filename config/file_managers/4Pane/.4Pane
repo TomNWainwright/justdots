@@ -1,0 +1,418 @@
+Aardvark=Dummy first line
+[Devices]
+[Devices/Misc]
+FloppyDevicesAutomount=0
+CDRomDevicesAutomount=1
+UsbDevicesAutomount=1
+FloppyDevicesSupermount=0
+CDRomDevicesSupermount=0
+UsbDevicesSupermount=0
+DeviceDiscoveryType=2
+FloppyDevicesInFstab=2
+CDDevicesInFstab=0
+UsbDevicesInFstab=0
+SuppressEmptyUsbDevices=1
+NoOfButtons=9
+[Devices/Buttons]
+[Devices/Buttons/a]
+Bitmap=harddisk.xpm
+Tooltip=Hard drive
+[Devices/Buttons/b]
+Bitmap=floppy.xpm
+Tooltip=Floppy disc
+[Devices/Buttons/c]
+Bitmap=cdrom.xpm
+Tooltip=CD or DVDRom
+[Devices/Buttons/d]
+Bitmap=cdr.xpm
+Tooltip=CD or DVD writer
+[Devices/Buttons/e]
+Bitmap=UsbPen.xpm
+Tooltip=USB Pen
+[Devices/Buttons/f]
+Bitmap=UsbMem.xpm
+Tooltip=USB memory card
+[Devices/Buttons/g]
+Bitmap=UsbMulticard.xpm
+Tooltip=USB card-reader
+[Devices/Buttons/h]
+Bitmap=harddisk-usb.xpm
+Tooltip=USB hard drive
+[Devices/Buttons/i]
+Bitmap=unknown.xpm
+Tooltip=Unknown device
+[Devices/ToLoad]
+NoOfDevices=0
+[Misc]
+Which_Su=5
+Use_sudo=0
+AppHeight=980
+AppWidth=1890
+Identifier=Genuine config file
+ResourceDir=/usr/share/4Pane/rc/
+BitmapsDir=/usr/share/4Pane/bitmaps/
+HelpDir=/usr/share/doc/4Pane
+PropertiesPage=0
+RETAIN_REL_TARGET=1
+whichgrep=0
+[Misc/Terminal]
+TERMINAL=konsole
+TERMEM_PROMPTFORMAT=%u@%h: %w %$>
+NoOfEntries=1
+a=konsole
+[Misc/Terminal/TERMINAL_FONT]
+UseSystemDefault=1
+pointsize=10
+family=74
+style=90
+weight=90
+underlined=0
+facename=Sans
+[Misc/TerminalCommand]
+TERMINAL_COMMAND=konsole -e
+NoOfEntries=1
+a=konsole -e
+[Misc/ToolsTerminalCommand]
+TOOLS_TERMINAL_COMMAND=konsole --noclose -e
+NoOfEntries=1
+a=konsole --noclose -e
+[Misc/DirCtrlTB]
+[Misc/DirCtrlTB/Icons]
+NoOfKnownIcons=5
+[Misc/DirCtrlTB/Icons/a]
+Icon=gohome.xpm
+Icontype=9
+[Misc/DirCtrlTB/Icons/b]
+Icon=MyDocuments.xpm
+Icontype=9
+[Misc/DirCtrlTB/Icons/c]
+Icon=bm1_button.xpm
+Icontype=9
+[Misc/DirCtrlTB/Icons/d]
+Icon=bm2_button.xpm
+Icontype=9
+[Misc/DirCtrlTB/Icons/e]
+Icon=bm3_button.xpm
+Icontype=9
+[Misc/DirCtrlTB/Buttons]
+[Misc/DirCtrlTB/Buttons/button_a]
+IconNo=0
+tooltip=Go to Home directory
+destination=/home/tom
+[Misc/DirCtrlTB/Buttons/button_b]
+IconNo=1
+tooltip=Go to Documents directory
+destination=/home/tom/Documents
+[Misc/FileOpen]
+UseSystem=1
+UseBuiltin=1
+PreferSystem=1
+[Misc/Display]
+TRASHCAN=/home/tom/.cache/4Pane/.Trash/
+[Editors]
+NoOfEditors=2
+[Editors/Icons]
+NoOfKnownIcons=13
+[Editors/Icons/a]
+Icon=kwrite.xpm
+Icontype=9
+[Editors/Icons/b]
+Icon=gedit.xpm
+Icontype=9
+[Editors/Icons/c]
+Icon=kedit.xpm
+Icontype=9
+[Editors/Icons/d]
+Icon=firefox.png
+Icontype=15
+[Editors/Icons/e]
+Icon=chrome-chromium.png
+Icontype=15
+[Editors/Icons/f]
+Icon=abiword.png
+Icontype=15
+[Editors/Icons/g]
+Icon=mousepad.png
+Icontype=15
+[Editors/Icons/h]
+Icon=openoffice.png
+Icontype=15
+[Editors/Icons/i]
+Icon=libreoffice.png
+Icontype=15
+[Editors/Icons/j]
+Icon=mate-text-editor.png
+Icontype=15
+[Editors/Icons/k]
+Icon=gjots.png
+Icontype=15
+[Editors/Icons/l]
+Icon=unknown.xpm
+Icontype=9
+[Editors/Icons/m]
+Icon=palemoon.png
+Icontype=15
+[Editors/a]
+Editor=kwrite
+LaunchString=kwrite
+[Editors/b]
+Editor=libreoffice
+LaunchString=libreoffice
+CanUseTabs=0
+IconNo=8
+[Tools]
+[Tools/Launch]
+Label=&Run a Program
+Count=4
+label_a=df
+data_a=df -h
+asroot_a=0
+terminal_a=1
+persists_a=1
+refreshpage_a=0
+refreshopposite_a=0
+label_b=du
+data_b=du -h
+asroot_b=0
+terminal_b=1
+persists_b=1
+refreshpage_b=0
+refreshopposite_b=0
+label_c=md5sum
+data_c=md5sum %f
+asroot_c=0
+terminal_c=1
+persists_c=1
+refreshpage_c=0
+refreshopposite_c=0
+label_d=touch %a
+data_d=touch %a
+asroot_d=0
+terminal_d=0
+persists_d=0
+refreshpage_d=0
+refreshopposite_d=0
+[Tools/Launch/a]
+Label=folders
+Count=1
+label_a=a
+data_a=sh -c 'find %d  -mindepth 2   -maxdepth 2 -type  d '
+asroot_a=0
+terminal_a=0
+persists_a=0
+refreshpage_a=0
+refreshopposite_a=0
+[Tools/Launch/b]
+Label=RPM
+Count=6
+label_a=Install rpm(s) as root: rpm -U
+data_a=rpm -U %a
+asroot_a=1
+terminal_a=0
+persists_a=0
+refreshpage_a=0
+refreshopposite_a=0
+label_b=Remove an rpm as root: rpm -e <name>
+data_b=rpm -e %p
+asroot_b=1
+terminal_b=0
+persists_b=0
+refreshpage_b=0
+refreshopposite_b=0
+label_c=Query the selected rpm
+data_c=rpm -qpi %f
+asroot_c=0
+terminal_c=1
+persists_c=1
+refreshpage_c=0
+refreshopposite_c=0
+label_d=List files provided by the selected rpm
+data_d=rpm -qpl %f
+asroot_d=0
+terminal_d=1
+persists_d=1
+refreshpage_d=0
+refreshopposite_d=0
+label_e=Query the named rpm
+data_e=rpm -qi %p
+asroot_e=0
+terminal_e=1
+persists_e=1
+refreshpage_e=0
+refreshopposite_e=0
+label_f=List files provided by the named rpm
+data_f=rpm -ql %p
+asroot_f=0
+terminal_f=1
+persists_f=1
+refreshpage_f=0
+refreshopposite_f=0
+[FileAssociations]
+[FileAssociations/Audio]
+dummy=
+[FileAssociations/Development]
+dummy=
+[FileAssociations/Editors]
+[FileAssociations/Editors/KWrite]
+Ext=txt,TXT,tex,README
+Filepath=kwrite
+Command=kwrite %s
+[FileAssociations/Editors/kate]
+Ext=txt,TXT,tex,README
+Filepath=kate
+Command=kate %s
+[FileAssociations/Graphics]
+dummy=
+[FileAssociations/Internet]
+dummy=
+[FileAssociations/Office]
+[FileAssociations/Office/Libreoffice\ calc]
+Ext=sxc,xls,ods
+Filepath=localc
+Command=localc %s
+[FileAssociations/Office/Libreoffice\ writer]
+Ext=sxw,doc,odt,rtf
+Filepath=lowriter
+Command=lowriter %s
+[FileAssociations/Multimedia]
+dummy=
+[FileAssociations/Other]
+dummy=
+[FileAssociations/Utilities]
+dummy=
+[LaunchExt]
+count=11
+[LaunchExt/a]
+Ext=txt
+appcount=2
+DefaultLabel=kwrite %s
+DefaultCommand=kwrite %s
+[LaunchExt/a/a]
+Label=kwrite
+Command=kwrite %s
+[LaunchExt/a/b]
+Label=kate
+Command=kate %s
+[LaunchExt/b]
+Ext=TXT
+appcount=2
+DefaultLabel=kwrite %s
+DefaultCommand=kwrite %s
+[LaunchExt/b/a]
+Label=kwrite
+Command=kwrite %s
+[LaunchExt/b/b]
+Label=kate
+Command=kate %s
+[LaunchExt/c]
+Ext=tex
+appcount=2
+DefaultLabel=kwrite %s
+DefaultCommand=kwrite %s
+[LaunchExt/c/a]
+Label=kwrite
+Command=kwrite %s
+[LaunchExt/c/b]
+Label=kate
+Command=kate %s
+[LaunchExt/d]
+Ext=README
+appcount=2
+DefaultLabel=kwrite %s
+DefaultCommand=kwrite %s
+[LaunchExt/d/a]
+Label=kwrite
+Command=kwrite %s
+[LaunchExt/d/b]
+Label=kate
+Command=kate %s
+[LaunchExt/e]
+Ext=sxw
+appcount=1
+DefaultLabel=Libreoffice writer
+DefaultCommand=lowriter %s
+[LaunchExt/e/a]
+Label=Libreoffice writer
+Command=lowriter %s
+[LaunchExt/f]
+Ext=doc
+appcount=1
+DefaultLabel=Libreoffice writer
+DefaultCommand=lowriter %s
+[LaunchExt/f/a]
+Label=Libreoffice writer
+Command=lowriter %s
+[LaunchExt/g]
+Ext=odt
+appcount=1
+DefaultLabel=Libreoffice writer
+DefaultCommand=lowriter %s
+[LaunchExt/g/a]
+Label=Libreoffice writer
+Command=lowriter %s
+[LaunchExt/h]
+Ext=rtf
+appcount=1
+DefaultLabel=Libreoffice writer
+DefaultCommand=lowriter %s
+[LaunchExt/h/a]
+Label=Libreoffice writer
+Command=lowriter %s
+[LaunchExt/i]
+Ext=xls
+appcount=1
+DefaultLabel=Libreoffice calc
+DefaultCommand=localc %s
+[LaunchExt/i/a]
+Label=Libreoffice calc
+Command=localc %s
+[LaunchExt/j]
+Ext=ods
+appcount=1
+DefaultLabel=Libreoffice calc
+DefaultCommand=localc %s
+[LaunchExt/j/a]
+Label=Libreoffice calc
+Command=localc %s
+[LaunchExt/k]
+Ext=sxc
+appcount=1
+DefaultLabel=Libreoffice calc
+DefaultCommand=localc %s
+[LaunchExt/k/a]
+Label=Libreoffice calc
+Command=localc %s
+[Tabs]
+[Tabs/tab_a]
+verticalsplitpos=756
+horizontalsplitpos=490
+leftverticalsashpos=378
+rightverticalsashpos=378
+tophorizontalsashpos=756
+bottomhorizontalsashpos=756
+unsplitsashpos=756
+Lwidthcol0=378
+LDesiredwidthcol0=378
+Rwidthcol0=378
+RDesiredwidthcol0=378
+Rwidthcol1=94
+RDesiredwidthcol1=94
+Rwidthcol2=94
+RDesiredwidthcol2=94
+Rwidthcol3=189
+RDesiredwidthcol3=189
+[Network]
+ShowmountFilepath=/sbin/showmount
+[Bookmarks]
+folderlabel=Bookmarks
+displayorder=
+[ToplevelWindowSize]
+[ToplevelWindowSize/MyConfigureDialog]
+ht=504
+wd=727
+[ToplevelWindowSize/QuickFindDlg]
+ht=398
+wd=514
+[ToplevelWindowSize/FindDialog]
+ht=517
+wd=710

@@ -44,5 +44,17 @@
     ~/.config/opera/Preferences: config/browsers/opera_prefs
     ~/bins:   data/bins
     ~/.local/bin: data/bins/bin
+    ~/.config/4Pane: config/file_managers/4Pane
+    ~/.config/abrt: config/system_files/abrt
+    ~/.config/akonadi: config/system_files/akonadi
+    ~/.config/autostart: config/system_files/autostart
+    ~/.config/autostart-scripts: config/system_files/autostart-scripts
+    ~/.config/bleachbit: config/utilities/bleachbit
+    ~/.config/liteide: config/editors/liteide
+    ~/.config/spacefm: config/file_managers/spacefm
+    ~/.config/Textosaurus: config/editors/Textosaurus
+    ~/.config/dnfdragora.yaml: config/system_files/dnfdragora.yaml
+    ~/.config/dolphinrc: config/file_managers/dolphinrc
+
 - 
   shell: []

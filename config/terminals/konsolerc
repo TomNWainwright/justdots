@@ -4,12 +4,15 @@ DefaultProfile=
 [Favorite Profiles]
 Favorites=
 
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/installout.txt,file:$HOME/installout.txt
+
 [MainWindow]
 Height 1080=1015
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAAA
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPaAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
-Width 1920=956
-Window-Maximized 1080x1920=true
+Width 1920=1920
+Window-Maximized 1080x1920=false
 
 [Notification Messages]
 CloseAllEmptyTabs=true

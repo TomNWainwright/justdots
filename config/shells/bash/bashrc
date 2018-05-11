@@ -22,5 +22,3 @@ setxkbmap gb
 
 
 
-
-export LD_LIBRARYPATH="$LD_LIBRARYPATH:/etc/ld.so.conf"

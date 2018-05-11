@@ -1,0 +1,11 @@
+10/05/18 1:30:28 pm  Launch external: Filename=shopt -s dotglob && mv --backup=numbered  doublecmd/* . && shopt -u dotglob / Param= / WorkDir=/home/tom/apps
+10/05/18 1:30:28 pm  Result external: Result=Success! / Filename=shopt -s dotglob && mv --backup=numbered  doublecmd/* . && shopt -u dotglob / Param= / WorkDir=/home/tom/apps
+10/05/18 1:30:47 pm  Launch external: Filename=shopt -s dotglob && mv --backup=numbered  2/* . && shopt -u dotglob / Param= / WorkDir=/home/tom
+10/05/18 1:30:47 pm  Result external: Result=Success! / Filename=shopt -s dotglob && mv --backup=numbered  2/* . && shopt -u dotglob / Param= / WorkDir=/home/tom
+10/05/18 7:15:58 pm  Program shutdown (tom/hal)
+10/05/18 7:57:04 pm  Program start (tom/hal)
+10/05/18 8:00:08 pm  Launch external: Filename=find / Param=find   -mindepth 2   -maxdepth 2 -type  d -exec mv {} "$( dirname {})" \; / WorkDir=/home/tom/2
+10/05/18 8:00:08 pm  Result external: Result=Success! / Filename=find / Param=find   -mindepth 2   -maxdepth 2 -type  d -exec mv {} "$( dirname {})" \; / WorkDir=/home/tom/2
+10/05/18 8:00:48 pm  Launch external: Filename=find / Param=-mindepth 2   -maxdepth 2 -type  d -exec mv {} "$( dirname {})" \; / WorkDir=/home/tom/2
+10/05/18 8:00:48 pm  Result external: Result=Success! / Filename=find / Param=-mindepth 2   -maxdepth 2 -type  d -exec mv {} "$( dirname {})" \; / WorkDir=/home/tom/2
+10/05/18 8:04:44 pm  Program shutdown (tom/hal)

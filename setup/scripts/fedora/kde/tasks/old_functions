@@ -1,0 +1,187 @@
+#!/bin/bash
+
+simple_install_debian () {
+sudo apt-get install -y $1
+}
+
+simple_install_fedora () {
+sudo dnf install -y $1
+}
+
+install_archive_tools  ()   {
+
+simple_install_fedora zip
+simple_install_fedora rar
+simple_install_fedora tar
+simple_install_fedora unzip
+simple_install_fedora unrar 
+simple_install_fedora p7zip 
+simple_install_fedora p7zip-full
+simple_install_fedora bzip2 
+simple_install_fedora gzip
+
+}
+
+install_automation_tools  ()   {
+
+simple_install_fedora wmctrl 
+simple_install_fedora xdotool
+
+}
+
+install_build_tools  ()   {
+
+sudo dnf install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+
+}
+
+install_download_tools  ()   {
+sudo dnf install -y curl git wget
+
+}
+
+
+
+install_prog_langs  ()   {
+sudo dnf install -y ruby perl
+
+
+}
+
+remove_packages ()   {
+
+sudo dnf purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk
+}
+
+
+
+install_gnome-pie  ()   {
+sudo dnf install -y  gnome-pie 
+}
+
+install_bleachbit  ()   {
+sudo dnf install -y  bleachbit
+}
+
+
+install_keepass2()   {
+sudo dnf install -y   keepass  # keepass2 on debians
+
+
+}
+
+
+
+install_emelfm2()   {
+sudo dnf install  -y   emelfm2
+}
+
+
+install_emelfm2()   {
+sudo dnf copr enable -y jkonecny/kakoune
+sudo dnf install -y kakoune
+
+
+}
+
+howl_install () {
+
+
+# sudo apt-get install -y libgtk-3-dev     # debian based
+sudo dnf install -y gtk3-devel # fedora
+git clone https://github.com/howl-editor/howl
+cd howl/src
+
+make
+sudo make install
+cd ..
+cd ..
+rm -rf howl
+
+}
+
+jumpapp_install () {
+
+git clone https://github.com/mkropat/jumpapp.git
+cd jumpapp
+sudo dnf install -y rpm-build rpmdevtools pandoc
+rpmdev-setuptree
+make rpm
+
+sudo yum localinstall -y jumpapp*.noarch.rpm
+cd ..
+rm -rf jumpapp 
+}
+
+fish_install () {
+sudo dnf install -y fish
+}
+
+conda_install () {
+install_download_tools
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh -b
+export PATH="/home/tom/miniconda3/bin:$PATH"
+pip install --upgrade pip
+rm Miniconda3-latest-Linux-x86_64.sh
+}
+
+go_install () {
+install_download_tools
+curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash
+}
+
+
+
+
+
+extraterm_install () {
+cd ~
+install_download_tools
+mkdir -p apps
+wget https://github.com/sedwards2009/extraterm/releases/download/v0.33.1/extraterm-0.33.1-linux-x64.zip
+unzip extraterm-0.33.1-linux-x64.zip -d apps
+rm  extraterm-0.33.1-linux-x64.zip
+cd ~
+}
+
+
+
+dotfiles_install () {
+cd ~
+cd /core
+./install
+cd~
+}
+
+fd_install () {
+sudo dnf install -y fd-find
+
+}
+
+xcape_install () {
+install_build_tools
+install_download_tools
+sudo dnf install -y  git gcc make pkgconfig libX11-devel libXtst-devel libXi-devel
+	
+git clone https://github.com/alols/xcape.git
+cd xcape
+make
+sudo make install
+cd ..
+rm -rf xcape
+
+
+}
+
+
+
+
+uni_network_setup ()   {
+
+
+
+sudo mkdir -p /etc/ssl/certs && sudo wget -nv --output-document=/etc/ssl/certs/UoB-Net-CA.pem https://www.wireless.bris.ac.uk/certs/eaproot/uob-net-ca.pem    
+
+
+}

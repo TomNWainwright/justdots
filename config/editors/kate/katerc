@@ -15,16 +15,16 @@ Show Status Bar=true
 Show Tab Bar=true
 
 [KFileDialog Settings]
-Recent Files[$e]=profile,file:///core/README.md,file:$HOME/bins/bin/focus_history.py,file:$HOME/bins/bin/focus_history,file:$HOME/bins/bin/focus_track,file:$HOME/bins/bin/focus-track,file:$HOME/bins/bin/xcape_single,file:$HOME/kdetricks,file:///core/config/shells/bash/lib/environment,file:///core/config/shells/bash/bashrc
-Recent URLs[$e]=file:///core/config/shells/bash/,file:///core/config/shells/bash/lib/,file:$HOME/bins/bin/,file:$HOME/bins/,file:$HOME/.config/,file:///core/
+Recent Files[$e]=file:///core/setup/dotbot/1,file:///core/config/shells/bash/lib/aliases,file:///core/config/shells/bash/bashrc,file:///core/setup/post-install,file:///core/setup/dotbot/install.conf.yaml,file:$HOME/.textadept/keymap.lua,file:$HOME/.textadept/properties.lua,file:$HOME/.textadept/semantic.lua,file:$HOME/.textadept/global.lua,file:$HOME/.textadept/extensions.lua,file:$HOME/.textadept/init.lua,file:///core/README.md,file:$HOME/bins/bin/focus_history.py,file:$HOME/bins/bin/focus_history,file:$HOME/bins/bin/focus_track,file:$HOME/bins/bin/focus-track
+Recent URLs[$e]=file:$HOME/.textadept/,file:$HOME/apps/textadept/,file:///core/setup/dotbot/,file:///core/setup/,file:///core/setup/scripts/fedora/kde/tasks/,file:///core/config/shells/bash/,file:///core/config/shells/bash/lib/
 
 [KTextEditor::Search]
-Replace History=dnf,aaa,\\\\n}\\\\n\\\\n...  ()   {,\\\\n}\\\\n...  ()   {,,\\\\n,$df,\s
-Search History=apt-get,\\\\.\\\\.\\\\.,#!/usr/bin/env sh,#!/usr/bin/env sh\n,update.*\\\\n,\\\\n+,^Certificate .*,^Setting .*,^Preparing .*,^Selecting .*,^Unpacking .*,^Get::.*,^Get:.*,^W: .*,file:///core,=
+Replace History=\s,\\\\n,,\\\\n\\\\n,\\\\n\\\\n\\\\n, : ,dnf,aaa,\\\\n}\\\\n\\\\n...  ()   {,\\\\n}\\\\n...  ()   {,$df
+Search History=make,themer,\\\\n,\\\\n+,\\\\..*,\\\\n\\\\n+,\\\\n : , +: ,.*devel.* :.*\\\\n,.*hex.* :.*\\\\n,.*editorconfig.* :.*\\\\n,.*i686.* :.*\\\\n,.*lib.* :.*\\\\n,.*vim.* :.*\\\\n,apt-get,\\\\.\\\\.\\\\.,#!/usr/bin/env sh,#!/usr/bin/env sh\n,update.*\\\\n,^Certificate .*,^Setting .*,^Preparing .*,^Selecting .*,^Unpacking .*,^Get::.*,^Get:.*,^W: .*,file:///core,=
 
 [MainWindow]
 Height 1080=1015
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPZAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1920=956
 Window-Maximized 1080x1920=true

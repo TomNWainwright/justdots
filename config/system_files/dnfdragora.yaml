@@ -1,0 +1,8 @@
+settings:
+  always_yes: false
+  do not show groups at startup: true
+  interval for checking updates: 180
+  show updates at startup: false
+view:
+  filter: skip_other
+  show: all

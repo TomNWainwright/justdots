@@ -1,6 +1,10 @@
 [Added Associations]
-text/plain=mousepad.desktop;vim.desktop;
 application/x-yaml=geany.desktop;vim.desktop;
+inode/directory=org.kde.dolphin.desktop;org.kde.krusader.desktop;org.kde.gwenview.desktop;
+text/plain=mousepad.desktop;vim.desktop;
+text/x-lua=org.kde.kate.desktop;
 
 [Default Applications]
+inode/directory=org.kde.dolphin.desktop;org.kde.krusader.desktop;
 text/plain=mousepad.desktop
+text/x-lua=org.kde.kate.desktop;

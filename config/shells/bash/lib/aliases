@@ -26,7 +26,7 @@ alias cache-policy='sudo apt-cache policy'
 alias search-package='sudo apt-cache search $argv'
 alias show-package='sudo apt-cache show $argv'
 alias sources='cat -n /etc/apt/sources.list && ls -lhA /etc/apt/sources.list.d/'
-
+alias gac='git add . && git commit'
 
 alias untar='tar -xvf'
 

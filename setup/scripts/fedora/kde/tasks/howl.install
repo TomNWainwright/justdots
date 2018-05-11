@@ -1,0 +1,12 @@
+
+
+# sudo apt-get install -y libgtk-3-dev     # debian based
+sudo dnf install -y gtk3-devel # fedora
+git clone https://github.com/howl-editor/howl
+cd howl/src
+
+make
+sudo make install
+cd ..
+cd ..
+rm -rf howl

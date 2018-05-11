@@ -1,0 +1,2 @@
+/home/tom/.cache
+/home/tom/.gnome

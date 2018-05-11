@@ -2,34 +2,90 @@
 
 
 
+git_make_install() {
+build_dir=$2
+if [ -z "$3" ]; then  
+build_dir="$2/$3" 
+fi 
+git clone $1 $2
+make_install $build_dir $2
+}
+
+
+
+make_install() {
+build_dir=$1
+repo_dir=$2
+if [ ! -z "$2" ]; then  
+repo_dir=$1
+fi 
+start_dir=$(pwd)
+cd $build_dir
+make
+sudo make install 
+cd $start_dir
+rm -rf $repo_dir
+
+}
+
+
+simple_install_debian () {
+sudo apt-get install -y $1
+}
+
+fed_install () {
+sudo dnf install -y  $1
+}
 
 install_archive_tools  ()   {
 
-sudo dnf install -y zip rar tar unzip unrar p7zip p7zip-full bzip2 gzip
+fed_install zip
+fed_install rar
+fed_install tar
+fed_install unzip
+fed_install unrar 
+fed_install p7zip 
+fed_install p7zip-full
+fed_install bzip2 
+fed_install gzip
 
 }
 
 install_automation_tools  ()   {
 
-sudo dnf install -y wmctrl xdotool
+fed_install wmctrl 
+fed_install xdotool
 
 }
 
 install_build_tools  ()   {
 
-sudo dnf install -y autoconf autogen automake autotools-dev build-essential cmake make gcc rake  pkg-config
+fed_install autogen         
+fed_install automake
+fed_install autotools-dev
+fed_install build-essential
+fed_install cmake
+fed_install make
+fed_install autoconf
+fed_install gcc
+fed_install rake
+fed_install pkg-config
+
+
+ 
 
 }
 
 install_download_tools  ()   {
-sudo dnf install -y curl git wget
+fed_install curl git wget
 
 }
 
 
 
 install_prog_langs  ()   {
-sudo dnf install -y ruby perl
+fed_install ruby 
+fed_install perl
 
 
 }
@@ -42,16 +98,16 @@ sudo dnf purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnom
 
 
 install_gnome-pie  ()   {
-sudo dnf install -y  gnome-pie 
+fed_install  gnome-pie 
 }
 
 install_bleachbit  ()   {
-sudo dnf install -y  bleachbit
+fed_install  bleachbit
 }
 
 
 install_keepass2()   {
-sudo dnf install -y   keepass2 
+fed_install   keepass  # keepass2 on debians
 
 
 }
@@ -59,24 +115,38 @@ sudo dnf install -y   keepass2
 
 
 install_emelfm2()   {
-sudo dnf install  -y   emelfm2
+fed_install   emelfm2
 }
 
 
+install_emelfm2()   {
+sudo dnf copr enable -y jkonecny/kakoune
+fed_install kakoune
 
 
 
+howl_install () {
+
+
+# sudo apt-get install -y libgtk-3-dev     # debian based
+fed_install gtk3-devel # fedora
+git_make_install https://github.com/howl-editor/howl howl src
+}
 
 jumpapp_install () {
 
 git clone https://github.com/mkropat/jumpapp.git
 cd jumpapp
+fed_install rpm-build rpmdevtools pandoc
+rpmdev-setuptree
 make rpm
-sudo yum localinstall jumpapp*.noarch.rpmgit clone https://
+sudo yum localinstall -y jumpapp*.noarch.rpm
+cd ..
+rm -rf jumpapp 
 }
 
 fish_install () {
-sudo dnf install -y fish
+fed_install fish
 }
 
 conda_install () {
@@ -117,21 +187,23 @@ cd~
 }
 
 fd_install () {
-dnf install -y fd-find
+fed_install fd-find
 
 }
 
 xcape_install () {
 install_build_tools
 install_download_tools
-sudo dnf install -y  git gcc make pkgconfig libX11-devel libXtst-devel libXi-devel
-	
-git clone https://github.com/alols/xcape.git
-cd xcape
-make
-sudo make install
-cd ..
-rm -rf xcape
+ fed_installgit
+ fed_installgcc
+ fed_installmake
+ fed_installpkgconfig
+ fed_installlibX11-devel
+ fed_installlibXtst-devel
+ fed_installlibXi-devel
+
+
+git_make_install  https://github.com/alols/xcape.git xcape
 
 
 }
@@ -139,3 +211,11 @@ rm -rf xcape
 
 
 
+uni_network_setup ()   {
+
+
+
+sudo mkdir -p /etc/ssl/certs && sudo wget -nv --output-document=/etc/ssl/certs/UoB-Net-CA.pem https://www.wireless.bris.ac.uk/certs/eaproot/uob-net-ca.pem    
+
+
+}
