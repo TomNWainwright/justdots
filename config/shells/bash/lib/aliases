@@ -1,32 +1,60 @@
 #!/bin/bash 
 
-df=/core
-alias df='cd /home/tom/dotfiles'
+alias df="cd $df"
+alias bashrc="kate $bashrc"
+alias bashenv="kate $bashenv"
+alias bashaliases="kate $bashaliases"
 
 alias ......='cd ../../../../..'
 alias .....='cd ../../../..'
 alias ....='cd ../../..'
 alias ...='cd ../..'
 alias ..='cd ..'
-alias :q=' exit'
+alias "c.."="cd .."
+alias "c-"="cd -"
+alias "c~"="cd $HOME"
+alias ~='cd ~'
+
 alias aar='sudo apt autoremove'
 alias afix='sudo apt-get install -f'
 alias ai='sudo apt install -y'
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 alias ap='sudo apt purge -y'
 alias ar='sudo apt remove'
 alias as='apt search'
 alias au='sudo apt update'
 alias aup='sudo apt upgrade'
-alias autoremove='sudo apt-get autoremove'
-
+alias list-key='sudo apt-key list'
+alias list-upgradable='sudo apt list --upgradable'
 alias unpack='sudo dpkg -i'
 alias synaptic='sudo synaptic'
 alias cache-policy='sudo apt-cache policy'
 alias search-package='sudo apt-cache search $argv'
 alias show-package='sudo apt-cache show $argv'
 alias sources='cat -n /etc/apt/sources.list && ls -lhA /etc/apt/sources.list.d/'
+
+
+
+alias dar='sudo apt autoremove'
+alias dfix='sudo apt-get install -f'
+alias di='sudo dnf install -y'
+alias drmy='sudo dnf remove -y'
+alias drm='sudo dnf remove'
+
+alias ds='dnf search'
+alias du='sudo dnf update'
+alias dup='sudo dnf upgrade'
+#alias list-upgradable='sudo apt list --upgradable'
+#alias unpack='sudo dpkg -i'
+#alias synaptic='sudo synaptic'
+#alias search-package='sudo apt-cache search $argv'
+#alias show-package='sudo apt-cache show $argv'
+#alias sources='cat -n /etc/apt/sources.list && ls -lhA /etc/apt/sources.list.d/'
+
 alias gac='git add . && git commit'
+
+
+
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 alias untar='tar -xvf'
 
@@ -42,6 +70,8 @@ alias commit='git commit'
 alias g='git'
 alias ga='git add'
 alias gc='git commit -S -m'
+alias gacp='git add . && git commit -S -m auto'
+
 
 alias please='sudo $(history -p !!)'
 alias pls='sudo $(fc -ln -1)'
@@ -49,7 +79,7 @@ alias sudo='sudo '
 alias cp='cp -irf'
 alias h='history'
 alias k='clear'
-alias mkdir='mkdir -p -v'
+alias mkdir='mkdir -pv'
 alias root='sudo -s'
 alias scat='sudo cat'
 alias unroot='sudo chown -R $USER:$USER '
@@ -57,14 +87,11 @@ alias unroot='sudo chown -R $USER:$USER '
 alias dl='$HOME/Downloads'
 
 
-alias h='cd ~; ls -a'
 alias here='open .'
 alias ldirs='ls -ldh .*/ */'
-alias list-key='sudo apt-key list'
-alias list-upgradable='sudo apt list --upgradable'
+
 alias loopfind='fv -o'
-alias loopkate='fv -oc Kate.AppImage'
-alias ~='cd ~'
+alias loopkate='fv -oc kate'
 
 alias p='python'
 alias path='echo "${PATH//:/$'\n'}"'
@@ -74,11 +101,7 @@ alias reload='exec ${SHELL} -l'
 alias rm='rm -ivr'
 
 
-alias ..="cd .."
-alias ...="cd ../.."
-alias "c.."="cd .."
-alias "c-"="cd -"
-alias "c~"="cd $HOME"
+
 
 alias j="jobs"
 alias f="fg"

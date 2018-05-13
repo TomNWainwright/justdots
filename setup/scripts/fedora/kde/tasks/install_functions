@@ -9,9 +9,12 @@ repo_dir=$1
 fi 
 start_dir=$(pwd)
 cd $build_dir
+echo $(pwd)
+ls
 make
 sudo make install 
 cd $start_dir
+echo $(pwd)
 rm -rf $repo_dir
 
 }
@@ -19,7 +22,7 @@ rm -rf $repo_dir
 
 git_make_install() {
 build_dir=$2
-if [ -z "$3" ]; then  
+if [ ! -z "$3" ]; then  
 build_dir="$2/$3" 
 fi 
 git clone $1 $2
@@ -119,11 +122,11 @@ fed_install   emelfm2
 }
 
 
-install_emelfm2()   {
+install_kakoune()   {
 sudo dnf copr enable -y jkonecny/kakoune
 fed_install kakoune
 
-
+}
 
 howl_install () {
 
@@ -137,7 +140,9 @@ jumpapp_install () {
 
 git clone https://github.com/mkropat/jumpapp.git
 cd jumpapp
-fed_install rpm-build rpmdevtools pandoc
+fed_install rpm-build 
+fed_install rpmdevtools
+fed_install pandoc
 rpmdev-setuptree
 make rpm
 sudo yum localinstall -y jumpapp*.noarch.rpm
@@ -192,15 +197,12 @@ fed_install fd-find
 }
 
 xcape_install () {
-install_build_tools
-install_download_tools
- fed_installgit
- fed_installgcc
- fed_installmake
- fed_installpkgconfig
- fed_installlibX11-devel
- fed_installlibXtst-devel
- fed_installlibXi-devel
+# install_build_tools
+# install_download_tools
+
+ fed_install libX11-devel
+ fed_install libXtst-devel
+ fed_install libXi-devel
 
 
 git_make_install  https://github.com/alols/xcape.git xcape

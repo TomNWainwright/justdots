@@ -8,11 +8,15 @@ Favorites=
 Config Revision=10
 Days Meta Infos=30
 Last Session=
+Modified Notification=false
+Recent File List Entry Count=10
+Restore Window Configuration=true
 Save Meta Infos=true
 Show Full Path in Title=false
 Show Menu Bar=true
 Show Status Bar=true
 Show Tab Bar=true
+Startup Session=manual
 
 [KFileDialog Settings]
 Recent Files[$e]=file:///core/setup/dotbot/1,file:///core/config/shells/bash/lib/aliases,file:///core/config/shells/bash/bashrc,file:///core/setup/post-install,file:///core/setup/dotbot/install.conf.yaml,file:$HOME/.textadept/keymap.lua,file:$HOME/.textadept/properties.lua,file:$HOME/.textadept/semantic.lua,file:$HOME/.textadept/global.lua,file:$HOME/.textadept/extensions.lua,file:$HOME/.textadept/init.lua,file:///core/README.md,file:$HOME/bins/bin/focus_history.py,file:$HOME/bins/bin/focus_history,file:$HOME/bins/bin/focus_track,file:$HOME/bins/bin/focus-track
@@ -22,12 +26,49 @@ Recent URLs[$e]=file:$HOME/.textadept/,file:$HOME/apps/textadept/,file:///core/s
 Replace History=\s,\\\\n,,\\\\n\\\\n,\\\\n\\\\n\\\\n, : ,dnf,aaa,\\\\n}\\\\n\\\\n...  ()   {,\\\\n}\\\\n...  ()   {,$df
 Search History=make,themer,\\\\n,\\\\n+,\\\\..*,\\\\n\\\\n+,\\\\n : , +: ,.*devel.* :.*\\\\n,.*hex.* :.*\\\\n,.*editorconfig.* :.*\\\\n,.*i686.* :.*\\\\n,.*lib.* :.*\\\\n,.*vim.* :.*\\\\n,apt-get,\\\\.\\\\.\\\\.,#!/usr/bin/env sh,#!/usr/bin/env sh\n,update.*\\\\n,^Certificate .*,^Setting .*,^Preparing .*,^Selecting .*,^Unpacking .*,^Get::.*,^Get:.*,^W: .*,file:///core,=
 
+[Konsole]
+AutoSyncronize=true
+SetEditor=false
+
 [MainWindow]
-Height 1080=1015
-State=AAAA/wAAAAD9AAAAAAAAB4AAAAPaAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+Height 1080=1053
+State=AAAA/wAAAAD9AAAAAAAAB4AAAAPXAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
-Width 1920=956
+Width 1920=1920
 Window-Maximized 1080x1920=true
+
+[PluginSymbolViewer]
+ExpandTree=true
+SortSymbols=true
+TreeView=true
+ViewTypes=true
+
+[PluginTextFilter]
+Completion list=grep j,echo ,head -c 5,sort,grep j | echo
+Copy result=false
+Merge output=true
+
+[Replicode]
+replicodePath=
+
+[Shortcuts]
+kate_mdi_toolview_kate_plugin_katesearch=none
+kate_mdi_toolview_kate_plugin_symbolviewer=none
+kate_mdi_toolview_kate_private_plugin_katefileselectorplugin=none
+kate_mdi_toolview_kate_private_plugin_katefiletreeplugin=none
+kate_mdi_toolview_kate_private_plugin_katekonsoleplugin=none
+kate_mdi_toolview_kate_private_plugin_katereplicodeplugin_config=none
+kate_mdi_toolview_kate_private_plugin_katereplicodeplugin_run=none
+kate_mdi_toolview_kate_private_plugin_katesnippetsplugin=none
+
+[Snippets]
+enabledRepositories=/home/tom/.local/share/ktexteditor_snippets/data/Tom.xml
+
+[Snippets][repository /home/tom/.local/share/ktexteditor_snippets/data/Tom.xml]
+shortcut shbang=
+
+[filebrowser]
+toolbar actions=home,reload,up,show hidden,back,forward,bookmarks,sync_dir,configure
 
 [filetree]
 editShade=179,218,246

@@ -8,7 +8,7 @@ Encoding=UTF-8
 End of Line=0
 Indent On Backspace=true
 Indent On Tab=true
-Indent On Text Paste=false
+Indent On Text Paste=true
 Indentation Mode=normal
 Indentation Width=4
 Keep Extra Spaces=false
@@ -19,7 +19,7 @@ Overwrite Mode=false
 PageUp/PageDown Moves Cursor=false
 Remove Spaces=0
 ReplaceTabsDyn=true
-Show Spaces=false
+Show Spaces=true
 Show Tabs=true
 Smart Home=true
 Swap Directory=
@@ -36,10 +36,10 @@ Encoding Prober Type=1
 Fallback Encoding=ISO-8859-15
 
 [Renderer]
-Animate Bracket Matching=false
+Animate Bracket Matching=true
 Schema=Normal
-Show Indentation Lines=false
-Show Whole Bracket Expression=false
+Show Indentation Lines=true
+Show Whole Bracket Expression=true
 Word Wrap Marker=false
 
 [View]
@@ -76,5 +76,5 @@ Smart Copy Cut=true
 Vi Input Mode Steal Keys=false
 Vi Relative Line Numbers=false
 Word Completion=true
-Word Completion Minimal Word Length=2
+Word Completion Minimal Word Length=1
 Word Completion Remove Tail=true
