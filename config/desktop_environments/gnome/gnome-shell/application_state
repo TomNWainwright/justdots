@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<application-state>
+  <context id="">
+    <application id="org.gnome.FileRoller.desktop" open-window-count="0" score="7" last-seen="1526131866"/>
+    <application id="gnome-control-center.desktop" open-window-count="1" score="196" last-seen="1526219087"/>
+    <application id="yelp.desktop" open-window-count="0" score="14" last-seen="1526144010"/>
+    <application id="org.kde.kate.desktop" open-window-count="0" score="0" last-seen="0"/>
+    <application id="com.github.eyelash.xi-gtk.desktop" open-window-count="0" score="6" last-seen="1526058381"/>
+    <application id="pluma.desktop" open-window-count="0" score="309" last-seen="1526144052"/>
+    <application id="medit.desktop" open-window-count="0" score="429" last-seen="1526143036"/>
+    <application id="gnome-abrt.desktop" open-window-count="0" score="2" last-seen="1526052028"/>
+    <application id="org.gnome.Nautilus.desktop" open-window-count="1" score="185" last-seen="1526219087"/>
+    <application id="xvkbd.desktop" open-window-count="0" score="0" last-seen="1526046184"/>
+    <application id="elementary_config.desktop" open-window-count="0" score="4" last-seen="1526210969"/>
+    <application id="xed.desktop" open-window-count="0" score="7" last-seen="1526149830"/>
+    <application id="google-chrome.desktop" open-window-count="1" score="14536" last-seen="1526218938"/>
+    <application id="gconf-editor.desktop" open-window-count="0" score="12" last-seen="1526131644"/>
+    <application id="pyrenamer.desktop" open-window-count="0" score="69" last-seen="1526120799"/>
+    <application id="org.gnome.gedit.desktop" open-window-count="1" score="606" last-seen="1526219023"/>
+    <application id="org.gnome.tweaks.desktop" open-window-count="0" score="623" last-seen="1526202514"/>
+    <application id="ca.desrt.dconf-editor.desktop" open-window-count="0" score="79" last-seen="1526134084"/>
+    <application id="enki.desktop" open-window-count="0" score="75" last-seen="1526123535"/>
+    <application id="org.gnome.Terminal.desktop" open-window-count="1" score="1665" last-seen="1526219013"/>
+    <application id="gnome-shell-extension-prefs.desktop" open-window-count="0" score="197" last-seen="1526202723"/>
+    <application id="juffed.desktop" open-window-count="0" score="8" last-seen="1526131709"/>
+    <application id="SciTE.desktop" open-window-count="0" score="32" last-seen="1526120793"/>
+    <application id="terminology.desktop" open-window-count="0" score="1083" last-seen="1526213404"/>
+    <application id="spacefm.desktop" open-window-count="1" score="441" last-seen="1526219071"/>
+    <application id="org.gnome.Software.desktop" open-window-count="0" score="30" last-seen="1526213480"/>
+    <application id="howl.desktop" open-window-count="0" score="393" last-seen="1526072927"/>
+    <application id="gnome-system-monitor.desktop" open-window-count="0" score="27" last-seen="1526160832"/>
+  </context>
+</application-state>

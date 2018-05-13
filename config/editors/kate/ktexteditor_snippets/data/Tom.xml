@@ -1,0 +1,15 @@
+<snippets namespace="Tom" name="Tom" filetypes="*" license="BSD" authors="">
+ <script>function fileName() { return document.fileName(); }
+function fileUrl() { return document.url(); }
+function encoding() { return document.encoding(); }
+function selection() { return view.selectedText(); }
+function year() { return new Date().getFullYear(); }
+function upper(x) { return x.toUpperCase(); }
+function lower(x) { return x.toLowerCase(); }
+</script>
+ <item>
+  <match>shbang</match>
+  <fillin>#!/bin/bash
+${fileName}</fillin>
+ </item>
+</snippets>

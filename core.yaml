@@ -1,0 +1,127 @@
+
+- config:
+  - system_files:
+    - akonadi:
+    - autostart:
+    - monitors.xml
+    - mimeapps.list
+    - dnfdragora.yaml
+    - user-dirs.locale
+    - user-dirs.dirs
+
+  - desktop_environments:
+    - kde:
+      - touchpadrc
+      - kdeglobals
+      - knfsshare
+    - xfce:
+      - panel:
+      - xfce4:
+        - desktop:
+        - xfconf:
+        - panel:
+        - terminal:
+        - helpers.rc
+      - terminal:
+    - gnome:
+      - argos:
+      - gnome-boxes:
+      - gtk-4.0:
+      - gconf:
+      - gtk-3.0:
+      - gnome-session:
+      - dconf:
+      - gtk-2.0:
+    
+    
+    
+    
+    ~/.config/emelfm2: config/file_managers/emelfm2
+    ~/.config/4Pane: config/file_managers/4Pane
+    ~/.config/doublecmd: config/file_managers/doublecmd
+    ~/.config/nemo: config/file_managers/nemo
+    ~/.config/dolphinrc: config/file_managers/dolphinrc
+    ~/.config/spacefm: config/file_managers/spacefm
+    
+
+    ~/.config/touchpadrc: config/desktop_environments/kde/touchpadrc
+    ~/.config/kdeglobals: config/desktop_environments/kde/kdeglobals
+    ~/.config/knfsshare: config/desktop_environments/kde/knfsshare
+
+    ~/.config/argos: config/desktop_environments/gnome/argos
+    ~/.config/gnome-boxes: config/desktop_environments/gnome/gnome-boxes
+    ~/.config/gtk-2.0: config/desktop_environments/gnome/gtk-2.0
+    ~/.config/gtk-3.0: config/desktop_environments/gnome/gtk-3.0
+    ~/.config/gtk-4.0: config/desktop_environments/gnome/gtk-4.0
+    ~/.config/gconf: config/desktop_environments/gnome/gconf
+    ~/.config/dconf: config/desktop_environments/gnome/dconf
+    ~/.config/gnome-session: config/desktop_environments/gnome/gnome-session
+      - 
+      
+      
+    ~/.config/katepartrc: config/editors/kate/katepartrc
+    ~/.config/katevirc: config/editors/kate/katevirc
+    ~/.config/katemetainfos: config/editors/kate/katemetainfos
+    ~/.config/katerc: config/editors/kate/katerc
+    ~/.config/kateschemarc: config/editors/kate/kateschemarc
+    ~/.config/katesyntaxhighlightingrc: config/editors/kate/katesyntaxhighlightingrc
+    ~/.config/tea: config/editors/tea
+    ~/.config/kak: config/editors/kak
+    ~/.config/liteide: config/editors/liteide
+    ~/.config/libreoffice: config/editors/libreoffice
+    ~/.config/micro: config/editors/micro
+    ~/.config/Textosaurus: config/editors/Textosaurus
+    
+    
+
+    ~/.config/KeePass: config/security/KeePass
+    ~/.config/keepassxc: config/security/keepassxc
+    ~/.config/goa-1.0: config/account_management/goa-1.0
+    
+    ~/.config/konsolerc: config/terminals/konsolerc
+    ~/.config/terminology: config/terminals/terminology
+    ~/.gitconfig: config/utilities/gitconfig
+    ~/.config/copyq: config/utilities/copyq
+    ~/.config/bleachbit: config/utilities/bleachbit
+
+
+    ~/.config/skippy-xd: config/window_switchers/skippy-xd
+    ~/.config/evolution: config/email/evolution
+
+    ~/.config/xfce4: config/desktop_environments/xfce/xfce4
+
+
+
+    ~/.config/rofi: config/launchers/rofi
+    ~/.config/gnome-pie: config/launchers/gnome-pie
+    ~/.config/dmenu-extended: config/launchers/dmenu-extended
+
+    ~/.bashrc: config/shells/bash/bashrc
+    ~/.profile: config/shells/bash/profile
+    ~/.config/fish: config/shells/fish/fish
+    ~/.config/xonsh: config/shells/xonsh
+    
+
+
+
+
+    ~/.config/google-chrome/Default/Preferences: config/browsers/chrome_prefs
+    ~/.config/opera/Preferences: config/browsers/opera_prefs
+
+    ~/.config/mimeapps.list: config/system_files/mimeapps.list
+    ~/.config/dnfdragora.yaml: config/system_files/dnfdragora.yaml
+    ~/.config/abrt: config/system_files/abrt
+    ~/.config/akonadi: config/system_files/akonadi
+    ~/.config/autostart: config/system_files/autostart
+    ~/.config/autostart-scripts: config/system_files/autostart-scripts
+
+
+
+
+
+
+
+    
+    ~/bins:   data/bins
+    ~/.local/bin: data/bins/bin
+

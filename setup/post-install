@@ -23,6 +23,8 @@ install_automation_tools
 install_gnome-pie
 install_bleachbit
 install_keepass2
+install_kate
+install_gnome_extras
 sudo chown -R tom:tom /home/tom/.cache
 
 #nemo_latest_install

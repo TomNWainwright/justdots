@@ -4,7 +4,7 @@ alias df="cd $df"
 alias bashrc="kate $bashrc"
 alias bashenv="kate $bashenv"
 alias bashaliases="kate $bashaliases"
-
+alias reloadrc=". $bashrc" 
 alias ......='cd ../../../../..'
 alias .....='cd ../../../..'
 alias ....='cd ../../..'

@@ -121,7 +121,17 @@ install_emelfm2()   {
 fed_install   emelfm2
 }
 
+install_gnome_extras () {
 
+fed_install gnome-tweak-tool
+
+}
+install_kate () {
+
+fed_install kate
+fed_install konsole
+
+}
 install_kakoune()   {
 sudo dnf copr enable -y jkonecny/kakoune
 fed_install kakoune

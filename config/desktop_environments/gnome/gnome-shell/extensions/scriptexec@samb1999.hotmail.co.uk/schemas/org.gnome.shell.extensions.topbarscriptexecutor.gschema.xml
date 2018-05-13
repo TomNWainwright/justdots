@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE schemalist SYSTEM "/usr/share/glib-2.0/schemas/gschema.dtd">
+<schemalist gettext-domain="gnome-shell-extensions-topbarscriptexecutor">
+    <schema path="/org/gnome/shell/extensions/topbarscriptexecutor/"
+        id="org.gnome.shell.extensions.topbarscriptexecutor">
+        <key name="buttons" type="s">
+            <default>""</default>
+            <summary>Button keys</summary>
+            <description>Keys of all buttons</description>
+        </key>
+    </schema>
+</schemalist>

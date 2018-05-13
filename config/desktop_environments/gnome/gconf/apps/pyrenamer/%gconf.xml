@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="autopreview" mtime="1526120799" type="bool" value="false"/>
+	<entry name="keepext" mtime="1526120799" type="bool" value="false"/>
+	<entry name="filedir" mtime="1526120799" type="int" value="1"/>
+	<entry name="options_shown" mtime="1526120799" type="bool" value="true"/>
+	<entry name="window_posy" mtime="1526120799" type="int" value="1080"/>
+	<entry name="window_posx" mtime="1526120799" type="int" value="0"/>
+	<entry name="window_height" mtime="1526120799" type="int" value="1043"/>
+	<entry name="window_width" mtime="1526120799" type="int" value="1920"/>
+	<entry name="window_maximized" mtime="1526120799" type="bool" value="true"/>
+	<entry name="pane_position" mtime="1526120799" type="int" value="721"/>
+</gconf>

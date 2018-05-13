@@ -1,10 +1,23 @@
 [Added Associations]
 application/x-yaml=geany.desktop;vim.desktop;
 inode/directory=org.kde.dolphin.desktop;org.kde.krusader.desktop;org.kde.gwenview.desktop;
-text/plain=mousepad.desktop;vim.desktop;
+text/plain=org.gnome.gedit.desktop;mousepad.desktop;vim.desktop;
 text/x-lua=org.kde.kate.desktop;
+text/html=google-chrome.desktop;
+text/xml=google-chrome.desktop;
+application/xhtml_xml=google-chrome.desktop;
+image/webp=google-chrome.desktop;
+x-scheme-handler/https=google-chrome.desktop;
+x-scheme-handler/ftp=google-chrome.desktop;
 
 [Default Applications]
 inode/directory=org.kde.dolphin.desktop;org.kde.krusader.desktop;
-text/plain=mousepad.desktop
+text/plain=org.gnome.gedit.desktop;mousepad.desktop;
 text/x-lua=org.kde.kate.desktop;
+x-scheme-handler/http=google-chrome.desktop
+text/html=google-chrome.desktop
+text/xml=google-chrome.desktop
+application/xhtml_xml=google-chrome.desktop
+image/webp=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/ftp=google-chrome.desktop
