@@ -69,8 +69,14 @@ alias clone='git clone'
 alias commit='git commit'
 alias g='git'
 alias ga='git add'
-alias gc='git commit -S -m'
-alias gacp='git add . && git commit -S -m auto'
+# alias gc='git commit -m auto'
+gacp() {
+
+git add .
+git commit --allow-empty-message -m "message "$1 $2 $3 $4 $5
+git push 
+
+}
 
 
 alias please='sudo $(history -p !!)'
