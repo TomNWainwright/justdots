@@ -52,8 +52,8 @@ sudo chown -R tom:tom /home/tom/.cache
 
 
 
-post_install_function
-sudo dnf install -y preload
+#post_install_function
+#sudo dnf install -y preload
 $df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
 . "$HOME/.bashrc"
 mkdir -p  $QUICKNOTEFILE
