@@ -51,6 +51,7 @@ sudo chown -R tom:tom /home/tom/.cache
 }
 
 
+uni_network_setup
 
 #post_install_function
 #sudo dnf install -y preload
