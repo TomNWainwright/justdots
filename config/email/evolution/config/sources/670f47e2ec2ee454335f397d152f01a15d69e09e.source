@@ -1,0 +1,28 @@
+[Data Source]
+DisplayName=tom.n.wainwright@googlemail.com
+Enabled=true
+Parent=c268b77c5634491f7d80daf0b4cdc0f4560a554e
+
+[Mail Composition]
+Bcc=
+Cc=
+DraftsFolder=folder://local/Drafts
+ReplyStyle=default
+SignImip=true
+TemplatesFolder=
+StartBottom=inconsistent
+TopSignature=inconsistent
+
+[Mail Identity]
+Address=tom.n.wainwright@googlemail.com
+Aliases=
+Name=
+Organization=
+ReplyTo=
+SignatureUid=none
+
+[Mail Submission]
+SentFolder=folder://local/Sent
+TransportUid=9e01e3f47fc18b3ff7c68ce935e6f253069beb97
+RepliesToOriginFolder=false
+UseSentFolder=true

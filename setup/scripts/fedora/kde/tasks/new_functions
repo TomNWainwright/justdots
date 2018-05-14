@@ -1,0 +1,233 @@
+#!/bin/bash
+
+
+make_install() {
+build_dir=$1
+repo_dir=$2
+if [ ! -z "$2" ]; then  
+repo_dir=$1
+fi 
+start_dir=$(pwd)
+cd $build_dir
+echo $(pwd)
+ls
+make
+sudo make install 
+cd $start_dir
+echo $(pwd)
+rm -rf $repo_dir
+
+}
+
+
+git_make_install() {
+build_dir=$2
+if [ ! -z "$3" ]; then  
+build_dir="$2/$3" 
+fi 
+git clone $1 $2
+make_install $build_dir $2
+}
+
+
+
+
+simple_install_debian () {
+sudo apt-get install -y $1
+}
+
+fed_install () {
+sudo dnf install -y  $1
+}
+
+install_archive_tools  ()   {
+
+fed_install zip
+fed_install rar
+fed_install tar
+fed_install unzip
+fed_install unrar 
+fed_install p7zip 
+fed_install p7zip-full
+fed_install bzip2 
+fed_install gzip
+
+}
+
+install_automation_tools  ()   {
+
+fed_install wmctrl 
+fed_install xdotool
+
+}
+
+install_build_tools  ()   {
+
+fed_install autogen         
+fed_install automake
+fed_install autotools-dev
+fed_install build-essential
+fed_install cmake
+fed_install make
+fed_install autoconf
+fed_install gcc
+fed_install rake
+fed_install pkg-config
+
+
+ 
+
+}
+
+install_download_tools  ()   {
+fed_install curl git wget
+
+}
+
+
+
+install_prog_langs  ()   {
+fed_install ruby 
+fed_install perl
+
+
+}
+
+remove_packages ()   {
+
+sudo dnf purge -y activity-log-manager aisleriot gnome-mahjongg gnome-mines gnome-sudoku hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart usb-creator-gtk webbrowser-app xdiagnose darktable dillo empathy evolution  polari putty putty-tools samba firefox netsurf-gtk
+}
+
+
+
+install_gnome-pie  ()   {
+fed_install  gnome-pie 
+}
+
+install_bleachbit  ()   {
+fed_install  bleachbit
+}
+
+
+install_keepass2()   {
+fed_install   keepass  # keepass2 on debians
+
+
+}
+
+
+
+install_emelfm2()   {
+fed_install   emelfm2
+}
+
+install_gnome_extras () {
+
+fed_install gnome-tweak-tool
+
+}
+install_kate () {
+
+fed_install kate
+fed_install konsole
+
+}
+install_kakoune()   {
+sudo dnf copr enable -y jkonecny/kakoune
+fed_install kakoune
+
+}
+
+howl_install () {
+
+
+# sudo apt-get install -y libgtk-3-dev     # debian based
+fed_install gtk3-devel # fedora
+git_make_install https://github.com/howl-editor/howl howl src
+}
+
+jumpapp_install () {
+
+git clone https://github.com/mkropat/jumpapp.git
+cd jumpapp
+fed_install rpm-build 
+fed_install rpmdevtools
+fed_install pandoc
+rpmdev-setuptree
+make rpm
+sudo yum localinstall -y jumpapp*.noarch.rpm
+cd ..
+rm -rf jumpapp 
+}
+
+fish_install () {
+fed_install fish
+}
+
+conda_install () {
+install_download_tools
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh -b
+export PATH="/home/tom/miniconda3/bin:$PATH"
+pip install --upgrade pip
+rm Miniconda3-latest-Linux-x86_64.sh
+}
+
+go_install () {
+install_download_tools
+curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash
+}
+
+
+
+
+
+extraterm_install () {
+cd ~
+install_download_tools
+mkdir -p apps
+wget https://github.com/sedwards2009/extraterm/releases/download/v0.33.1/extraterm-0.33.1-linux-x64.zip
+unzip extraterm-0.33.1-linux-x64.zip -d apps
+rm  extraterm-0.33.1-linux-x64.zip
+cd ~
+}
+
+
+
+dotfiles_install () {
+cd ~
+cd /core
+./install
+cd~
+}
+
+fd_install () {
+fed_install fd-find
+
+}
+
+xcape_install () {
+# install_build_tools
+# install_download_tools
+
+ fed_install libX11-devel
+ fed_install libXtst-devel
+ fed_install libXi-devel
+
+
+git_make_install  https://github.com/alols/xcape.git xcape
+
+
+}
+
+
+
+
+uni_network_setup ()   {
+
+
+
+sudo mkdir -p /etc/ssl/certs && sudo wget -nv --output-document=/etc/ssl/certs/UoB-Net-CA.pem https://www.wireless.bris.ac.uk/certs/eaproot/uob-net-ca.pem    
+
+
+}

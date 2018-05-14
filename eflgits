@@ -1,0 +1,33 @@
+
+
+
+
+src_build -g https://git.enlightenment.org/enlightenment/modules/forecasts.git -d forecasts -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/mail.git -d mail -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/mem.git -d mem -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/places.git -d places -c autogen
+
+
+src_build -g https://git.enlightenment.org/enlightenment/modules/presentator.git -d presentator -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/share.git -d share -c autogen
+src_build -g https://git.enlightenment.org/tools/abi_checks.git -d abi_checks -c autogen
+src_build -g https://git.enlightenment.org/tools/clouseau.git -d clouseau -c autogen
+src_build -g https://git.enlightenment.org/tools/edi.git -d edi -c autogen
+src_build -g https://git.enlightenment.org/tools/edje_list.git -d edje_list -c autogen
+src_build -g https://git.enlightenment.org/tools/edje_smart_thumb.git -d edje_smart_thumb -c autogen
+src_build -g https://git.enlightenment.org/tools/eflete.git -d eflete -c autogen
+
+src_build -g https://git.enlightenment.org/tools/enventor.git -d enventor -c autogen
+src_build -g https://git.enlightenment.org/tools/erigo.git -d erigo -c autogen
+
+
+src_build -g https://git.enlightenment.org/enlightenment/modules/eweather.git -d eweather -c autogen
+src_build -g https://git.enlightenment.org/apps/empc.git -d empc -c autogen
+src_build -g https://git.enlightenment.org/apps/emprint.git -d emprint -c autogen
+src_build -g https://git.enlightenment.org/apps/enjoy.git -d enjoy -c autogen
+src_build -g https://git.enlightenment.org/apps/ephoto.git -d ephoto -c autogen
+src_build -g https://git.enlightenment.org/apps/epour.git -d epour -c autogen
+src_build -g https://git.enlightenment.org/apps/equate.git -d equate -c autogen
+src_build -g https://git.enlightenment.org/apps/eruler.git -d eruler -c autogen
+src_build -g https://git.enlightenment.org/apps/eve.git -d eve -c autogen
+src_build -g https://git.enlightenment.org/apps/express.git -d express -c autogen

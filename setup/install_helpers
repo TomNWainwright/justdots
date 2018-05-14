@@ -1,0 +1,241 @@
+#!/bin/bash
+
+
+
+simple_install () {
+
+ANY=
+while true
+do
+  case $1 in
+    -f)  
+        FEDORA_PACKAGES= $2
+        shift; shift
+        ;;
+    -u)  # get git url
+        UBUNTU_PACKAGES=$2
+        shift; shift
+        ;;
+    -*)
+        echo "Unknown option: $1"
+        exit 1
+        ;;
+    *) ANY="$ANY$1"
+	shift
+        break
+        ;;
+  esac
+done
+
+
+if [ "$(lsb_release -i)" = "Distributor ID:	Ubuntu" ]; then
+sudo apt-get install -y $UBUNTU_PACKAGES  $ANY
+else
+sudo dnf install -y  $FEDORA_PACKAGES $ANY
+fi
+
+
+
+
+ANY=
+UBUNTU_PACKAGES=
+FEDORA_PACKAGES=
+}
+
+
+local_install () {
+
+ANY=
+while true
+do
+  case $1 in
+    -f)  
+        FEDORA_PACKAGES= $2
+        shift; shift
+        ;;
+    -u)  # get git url
+        UBUNTU_PACKAGES=$2
+        shift; shift
+        ;;
+    -*)
+        echo "Unknown option: $1"
+        exit 1
+        ;;
+    *) ANY="$ANY$1"
+	shift
+        break
+        ;;
+  esac
+done
+
+if [ "$(lsb_release -i)" = "Distributor ID:	Ubuntu" ]; then
+sudo dpkg -i -y $UBUNTU_PACKAGES  $ANY
+sudo apt-get install -f
+else
+echo fedora option not working yet
+fi
+
+ANY=
+UBUNTU_PACKAGES=
+FEDORA_PACKAGES=
+
+}
+
+#download_install
+
+
+
+simple_opts() {
+while true
+do
+  case $1 in
+    -d)  # get destination
+        DESTINATION=$2
+        shift; shift
+        ;;
+    -g)  # get git url
+        GIT_URL=$2
+        shift; shift
+        ;;
+    -v) # use verbose mode
+        VERBOSE=true
+        shift
+        ;;
+    -*)
+        echo "Unknown option: $1"
+        exit 1
+        ;;
+    *)
+        break
+        ;;
+  esac
+done
+
+echo $GIT_URL
+echo $DESTINATION
+echo $*
+
+
+}
+
+
+
+
+src_build () {
+while true
+do
+  case $1 in
+    -d)  # get destination
+        REPO_DIR=$2
+        shift; shift
+        ;;
+    -s)  # get destination
+        BUILD_DIR=$2
+        shift; shift
+        ;;
+    -g)  # get git url
+        GIT_URL=$2
+        shift; shift
+        ;;
+    -c) 
+        CONF_METHOD=$2
+        shift; shift
+        ;;
+    -m) 
+        MAKE_METHOD=$2
+        shift; shift
+        ;;
+    -*)
+        echo "Unknown option: $1"
+        exit 1
+        ;;
+    *)
+        break
+        ;;
+
+  esac
+done
+
+repo_stage() {
+if [ ! -z "$GIT_URL" ]; then  
+git clone $GIT_URL $REPO_DIR
+fi
+mkdir -p "$REPO_DIR/$BUILD_DIR"
+cd "$REPO_DIR/$BUILD_DIR"
+}
+configure_stage () {
+if [ ! -z "$CONF_METHOD"  ]; then  
+if [ "$CONF_METHOD" = autogen ]; then
+./autogen.sh
+elif [ "$CONF_METHOD" = configure ]; then
+./configure
+elif [ "$CONF_METHOD" = meson ]; then
+meson build
+cd build
+elif [ "$CONF_METHOD" = cmake ]; then
+mkdir build
+cd build
+cmake ..
+fi
+fi
+}
+
+make_stage () {
+if [ ! -z "$MAKE_METHOD"  ]; then
+$MAKE_METHOD
+else
+make
+fi
+}  
+
+
+install_stage () {
+if [ ! -z "$MAKE_METHOD"  ]; then
+sudo $MAKE_METHOD install
+else
+sudo make install
+fi
+} 
+
+
+
+echo **********************************  Building $REPO_DIR  ******************************************************
+start_dir=$(pwd)
+repo_stage
+configure_stage
+make_stage
+install_stage
+cd $start_dir
+rm -rf $REPO_DIR
+echo **********************************  Finished Building $REPO_DIR  ******************************************************
+MAKE_METHOD=""
+CONF_METHOD=""
+REPO_DIR=""
+GIT_URL=""
+
+}
+
+
+
+
+efl_updatelibs() {
+sudo ln -s /usr/local/share/dbus-1/services/org.enlightenment.Ethumb.service /usr/share/dbus-1/services/org.enlightenment.Ethumb.service
+sudo ldconfig
+}
+
+efl_envsetup() {
+echo /usr/local/lib  > local.conf && sudo mv local.conf  /etc/ld.so.conf.d/local.conf
+export PATH=/usr/local/bin:"$PATH"
+export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:"$PKG_CONFIG_PATH"
+export LD_LIBRARY_PATH=/usr/local/lib:"$LD_LIBRARY_PATH"
+#Below choose one of the following CFLAGS to use. To ensure your code is compiled with decent optimzations you should also set this up in your environment:
+export CFLAGS="-O3 -ffast-math -march=native"
+
+
+#Note the LD_LIBRARY_PATH environment variable is set. You can ensure the system always supports /usr/local/lib by editing /etc/ld.so.conf or adding a file to /etc/ld.so.conf.d and #simply have a line in either file that says:
+
+#/usr/local/lib
+#And remember to run sudo ldconfig tool every time you install a library to ensure caches are updated.
+
+sudo ldconfig
+}

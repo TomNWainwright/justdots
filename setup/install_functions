@@ -1,0 +1,167 @@
+#!/bin/bash
+
+. $SETUP/install_helpers
+
+install_build_tools  ()   {
+
+simple_install autogen automake autotools-dev build-essential cmake make autoconf gcc rake -u pkg-config -f pkgconfig
+
+}
+
+install_archive_tools  ()   {
+
+simple_install zip rar tar unzip unrar  p7zip  p7zip-full bzip2  gzip
+
+}
+
+install_automation_tools  ()   {
+
+simple_install wmctrl 
+simple_install xdotool
+
+}
+
+
+
+install_download_tools  ()   {
+simple_install curl git wget
+
+}
+
+
+
+install_prog_langs  ()   {
+simple_install ruby 
+simple_install perl
+
+
+}
+
+remove_packages_ubuntu ()   {
+
+sudo apt-get purge -y gnome-mahjongg gnome-mines gnome-sudoku firefox  netsurf-gtk dillo 
+}
+
+#activity-log-manager aisleriot  hplip landscape-client-ui-install overlay-scrollbar overlay-scrollbar-gtk2 overlay-scrollbar-gtk3 remmina rhythmbox shotwell shotwell-common thunderbird unity-scope-manpages unity-scope-openclipart #usb-creator-gtk webbrowser-app xdiagnose darktable  empathy  polari putty putty-tools samba 
+
+
+install_gnome-pie  ()   {
+simple_install  gnome-pie 
+}
+
+install_bleachbit  ()   {
+simple_install  bleachbit
+}
+
+
+install_keepass2()   {
+simple_install   -f keepass -u keepass2  # keepass2 
+
+}
+
+
+
+install_emelfm2()   {
+simple_install   emelfm2
+}
+
+install_gnome_extras () {
+
+simple_install gnome-tweak-tool
+
+}
+install_kate () {
+
+simple_install kate
+simple_install konsole
+
+}
+install_kakoune_fed()   {
+sudo dnf copr enable -y jkonecny/kakoune
+simple_install kakoune
+
+}
+
+howl_install () {
+
+
+simple_install -f gtk3-devel -u  libgtk-3-dev 
+src_build -g https://github.com/howl-editor/howl -d howl -s src
+}
+
+jumpapp_install_fed () {
+
+git clone https://github.com/mkropat/jumpapp.git
+cd jumpapp
+simple_install rpm-build 
+simple_install rpmdevtools
+simple_install pandoc
+rpmdev-setuptree
+make rpm
+sudo yum localinstall -y jumpapp*.noarch.rpm
+cd ..
+rm -rf jumpapp 
+}
+
+fish_install () {
+### needs ppa for ub maybe
+simple_install fish
+}
+
+conda_install () {
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+sh Miniconda3-latest-Linux-x86_64.sh -b
+export PATH="/home/tom/miniconda3/bin:$PATH"
+pip install --upgrade pip
+rm Miniconda3-latest-Linux-x86_64.sh
+}
+
+go_install () {
+curl https://raw.githubusercontent.com/PursuanceProject/install-go/master/install-go.sh | bash
+}
+
+
+
+dotfiles_install () {
+cd ~
+cd /core
+./install
+cd~
+}
+
+fd_install_fed () {
+simple_install -f fd-find
+}
+
+fd_install_ubuntu () {
+wget https://github.com/sharkdp/fd/releases/download/v7.0.0/fd-musl_7.0.0_amd64.deb
+sudo dpkg -i fd-musl_7.0.0_amd64.deb
+sudo apt-get install -f
+rm -rf fd-musl_7.0.0_amd64.deb
+}
+
+xcape_install () {
+simple_install git gcc make  -u "pkg-config libx11-dev libxtst-dev libxi-dev" -f "pkgconfig libX11-devel libXtst-devel libXi-devel"  
+src_build -g  https://github.com/alols/xcape.git -d xcape
+}
+
+
+
+
+uni_network_setup ()   {
+
+
+
+sudo mkdir -p /etc/ssl/certs && sudo wget -nv --output-document=/etc/ssl/certs/UoB-Net-CA.pem https://www.wireless.bris.ac.uk/certs/eaproot/uob-net-ca.pem    
+
+
+}
+
+
+
+
+efl_dependencies () {
+
+simple_install gcc curl cmake check autopoint autogen automake autoconf doxygen cpp make meson ninja-build openssl shtool vlc  -f "bullet-devel dbus-devel fontconfig-devel freetype-devel fribidi-devel giflib-devel glib2-devel gstreamer1-devel gstreamer1-plugins-base-devel libjpeg-turbo-devel libmount-devel LibRaw-devel librsvg2-devel libsndfile-devel libspectre-devel libtiff-devel libXcomposite-devel libXcursor-devel libXinerama-devel libXrandr-devel libXrender-devel libXScrnSaver-devel libXtst-devel luajit-devel openssl-devel poppler-cpp-devel poppler-devel pulseaudio-libs-devel systemd-devel xorg-x11-server-deve" -u "gettext libbullet-dev libdbus-1-dev libeeze-dev libeeze1 libfontconfig1-dev libfreetype6-dev libfribidi-dev libgif-dev libgl1-mesa-dev libglib2.0-dev libgstreamer-plugins-base1.0-dev libgstreamer1.0-dev libjpeg-dev libluajit-5.1-dev libmount-dev libpam-dev libpoppler-cpp-dev libpoppler-dev libpulse-dev libraw-dev librsvg2-dev libsndfile1-dev libspectre-dev libssl-dev libsystemd-dev libtiff5-dev libtool libudev-dev libx11-dev libxcb-keysyms1 libxcomposite-dev libxcursor-dev libxext-dev libxinerama-dev libxrandr-dev libxrender-dev libxss-dev libxtst-dev luajit"
+
+}

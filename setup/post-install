@@ -1,13 +1,13 @@
 #!/bin/bash
 df=/core
-SETUP="$df/setup"
-TASKS="$SETUP/scripts/tasks"
-LISTS="$SETUP/setup/scripts/package_lists"
-TASKS="$SETUP/setup/scripts/tasks"
+export SETUP="$df/setup"
+export TASKS="$SETUP/scripts/tasks"
+export LISTS="$SETUP/setup/scripts/package_lists"
+export TASKS="$SETUP/setup/scripts/tasks"
 
-# for f in $TASKS; do source $f; done
-# for f in $PACKAGELISTS; do source $f; done
-. $SETUP/scripts/fedora/kde/tasks/install_functions
+
+. $SETUP/install_helpers
+. $SETUP/install_functions
 
 post_install_function() {
 
@@ -24,7 +24,7 @@ install_gnome-pie
 install_bleachbit
 install_keepass2
 install_kate
-install_gnome_extras
+#install_gnome_extras
 sudo chown -R tom:tom /home/tom/.cache
 
 #nemo_latest_install
@@ -35,13 +35,13 @@ sudo chown -R tom:tom /home/tom/.cache
 
 #skippy_xd_install
 
-fd_install
+fd_install_ubuntu
 xcape_install
-kakoune_install
+#kakoune_install
 howl_install
 uni_network_setup
 # remove_packages
-
+bash $SETUP/eflbuildscript
 
 
 sudo chown -R tom:tom /home/tom/.cache
@@ -51,10 +51,10 @@ sudo chown -R tom:tom /home/tom/.cache
 }
 
 
-uni_network_setup
 
-#post_install_function
-#sudo dnf install -y preload
+
+post_install_function
+sudo dnf install -y preload
 $df/setup/dotbot/dotbot/bin/dotbot  -c "$df/setup/dotbot/install.conf.yaml" -d "$df"
 . "$HOME/.bashrc"
 mkdir -p  $QUICKNOTEFILE

@@ -4,49 +4,54 @@
 
 
 #!/bin/bash
+df=/core
+export SETUP="$df/setup"
+export TASKS="$SETUP/scripts/tasks"
+export LISTS="$SETUP/setup/scripts/package_lists"
+export TASKS="$SETUP/setup/scripts/tasks"
 
 
-. /core/setup/eflfunctions
-bash /core/setup/efldependencies
 
-envsetup
-
-git_make_install https://git.enlightenment.org/core/efl.git efl
-updatelibs
-git_meson_install git clone https://git.enlightenment.org/core/enlightenment.git enlightenment
-git_meson_install https://git.enlightenment.org/apps/terminology.git terminology
-git_meson_install https://git.enlightenment.org/apps/rage.git rage
-git_make_install https://git.enlightenment.org/apps/econnman.git econnman
-git_make_install https://git.enlightenment.org/apps/ecrire.git ecrire
-git_make_install https://git.enlightenment.org/enlightenment/gadgets/wireless.git wireless
-git_make_install https://git.enlightenment.org/apps/extra.git extra
+# src_build 
+#-g=git url
+# -d=repo_dir 
+#  -s build dir if there are extra paths
+# -c conf method = autogen, configure or meson. Dont use to skip
+# -m make method = ninja or leave blank for make
 
 
-#git_make_install https://git.enlightenment.org/apps/empc.git empc
-#git_make_install https://git.enlightenment.org/apps/emprint.git emprint
-#git_make_install https://git.enlightenment.org/apps/enjoy.git enjoy
-#git_make_install https://git.enlightenment.org/apps/ephoto.git ephoto
-#git_make_install https://git.enlightenment.org/apps/epour.git epour
-#git_make_install https://git.enlightenment.org/apps/equate.git equate
-#git_make_install https://git.enlightenment.org/apps/eruler.git eruler
-#git_make_install https://git.enlightenment.org/apps/espionage.git espionage
-#git_make_install https://git.enlightenment.org/apps/eterm.git eterm
-#git_make_install https://git.enlightenment.org/apps/eve.git eve
-#git_make_install https://git.enlightenment.org/apps/express.git express
+. $SETUP/install_helpers
+. $SETUP/install_functions
 
-# git_make_install https://git.enlightenment.org/bindings/cxx/eflxx.git eflxx
-# git_make_install https://git.enlightenment.org/bindings/elev8.git elev8
-#git_make_install https://git.enlightenment.org/bindings/python/python-efl.git python-efl
-#git_make_install https://git.enlightenment.org/bindings/ruby/ffi-efl.git ffi-efl
-#git_make_install https://git.enlightenment.org/tools/abi_checks.git abi_checks
-#git_make_install https://git.enlightenment.org/tools/clouseau.git clouseau
-#git_make_install https://git.enlightenment.org/tools/edi.git edi
-#git_make_install https://git.enlightenment.org/tools/edje_list.git edje_list
-#git_make_install https://git.enlightenment.org/tools/edje_smart_thumb.git edje_smart_thumb
-#git_make_install https://git.enlightenment.org/tools/eflete.git eflete
-#git_make_install https://git.enlightenment.org/tools/elm-theme-viewer.git elm-theme-viewer
-#git_make_install https://git.enlightenment.org/tools/enventor.git enventor
-#git_make_install https://git.enlightenment.org/tools/erigo.git erigo
+efl_dependencies
+efl_envsetup
 
+src_build -g https://git.enlightenment.org/core/efl.git -d efl -c autogen 
+efl_updatelibs
+src_build -g git clone https://git.enlightenment.org/core/enlightenment.git -d enlightenment -m meson -c autogen 
+sudo ldconfig 
+src_build -g https://git.enlightenment.org/apps/terminology.git -d terminology -m meson -c autogen 
+src_build -g https://git.enlightenment.org/apps/rage.git -d rage -m meson -c autogen 
+src_build -g https://git.enlightenment.org/apps/econnman.git  -d econnman -c autogen
+src_build -g https://git.enlightenment.org/apps/ecrire.git  -d ecrire -c cmake 
+src_build -g https://git.enlightenment.org/enlightenment/gadgets/wireless.git  -d wireless -c autogen
+src_build -g https://git.enlightenment.org/apps/extra.git  -d extra -c autogen 
+src_build -g https://git.enlightenment.org/apps/espionage.git  -d espionage -c autogen 
+src_build -g https://git.enlightenment.org/apps/eterm.git  -d eterm -c autogen 
+src_build -g https://git.enlightenment.org/bindings/cxx/eflxx.git -d eflxx -c autogen
+sudo ldconfig 
+src_build -g https://git.enlightenment.org/bindings/elev8.git -d elev8 -c autogen
+sudo ldconfig 
+src_build -g https://git.enlightenment.org/bindings/python/python-efl.git -d python-efl -c autogen
+sudo ldconfig 
+src_build -g https://git.enlightenment.org/bindings/ruby/ffi-efl.git -d ffi-efl -c autogen
+sudo ldconfig 
+src_build -g https://git.enlightenment.org/enlightenment/modules/comp-scale.git -d comp-scale -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/desksanity.git -d desksanity -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/engage.git -d engage -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/everything-places.git -d everything-places -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/everything-websearch.git -d everything-websearch -c autogen
+src_build -g https://git.enlightenment.org/tools/elm-theme-viewer.git -d elm-theme-viewer -c autogen
+src_build -g https://git.enlightenment.org/enlightenment/modules/extramenu.git -d extramenu -c autogen
 
 
