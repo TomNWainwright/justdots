@@ -35,7 +35,7 @@ sudo chown -R tom:tom /home/tom/.cache
 
 #skippy_xd_install
 
-fd_install_ubuntu
+fd_install_fedora
 xcape_install
 #kakoune_install
 howl_install
