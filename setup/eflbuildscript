@@ -6,132 +6,19 @@
 #!/bin/bash
 
 
+. /core/setup/eflfunctions
+bash /core/setup/efldependencies
 
-sudo apt-get install -y gcc make check autoconf automake autopoint  gettext meson ninja-build   luajit  libxcb-keysyms1 vlc    curl openssl       libfreetype6-dev autogen libtool shtool check libssl-dev libsystemd-dev libjpeg-dev libglib2.0-dev libgstreamer1.0-dev libluajit-5.1-dev libfreetype6-dev libfontconfig1-dev libfribidi-dev libx11-dev libxext-dev libxrender-dev libgl1-mesa-dev libgif-dev libtiff5-dev libpoppler-dev libpoppler-cpp-dev libspectre-dev libraw-dev librsvg2-dev libudev-dev libmount-dev libdbus-1-dev libpulse-dev libsndfile1-dev libxcursor-dev libxcomposite-dev libxinerama-dev libxrandr-dev libxtst-dev libxss-dev libbullet-dev libgstreamer-plugins-base1.0-dev doxygen libpam-dev  libeeze-dev libeeze1
+envsetup
 
-
-
-
-
-
-export PATH=/usr/local/bin:"$PATH"
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:"$PKG_CONFIG_PATH"
-export LD_LIBRARY_PATH=/usr/local/lib:"$LD_LIBRARY_PATH"
-
-export CFLAGS="-O3 -ffast-math -march=native"
-
-
-#Note the LD_LIBRARY_PATH environment variable is set. You can ensure the system always supports /usr/local/lib by editing /etc/ld.so.conf or adding a file to /etc/ld.so.conf.d and #simply have a line in either file that says:
-
-#/usr/local/lib
-#And remember to run sudo ldconfig tool every time you install a library to ensure caches are updated.
-
-mkdir eflbuild
-cd eflbuild
-#git clone https://git.enlightenment.org/core/efl.git
-git clone https://git.enlightenment.org/core/enlightenment.git
-git clone https://git.enlightenment.org/apps/terminology.git
-git clone https://git.enlightenment.org/apps/rage.git
-#cd efl
-#./autogen.sh
-#make
-#sudo make install
-#sudo ln -s /usr/local/share/dbus-1/services/org.enlightenment.Ethumb.service /usr/share/dbus-1/services/org.enlightenment.Ethumb.service
-#sudo ldconfig
-
-cd ..
-cd enlightenment
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd terminology
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd rage
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd ..
-rm -vrf eflbuild 
+git_make_install https://git.enlightenment.org/core/efl.git efl
+updatelibs
+git_meson_install git clone https://git.enlightenment.org/core/enlightenment.git enlightenment
+git_meson_install https://git.enlightenment.org/apps/terminology.git terminology
+git_meson_install https://git.enlightenment.org/apps/rage.git rage
 
 
 
 
-
-
-#!/bin/bash
-
-
-
-sudo apt-get install -y gcc make check autoconf automake autopoint libtool gettext meson ninja libpam freetype libpng libjpeg zlib libdbus luajit libx11 libxcursor libxrender libxrandr libxfixes libxdamage libxcomposite libxss libxp libxext libxinerama libxkbfile libxtst libxcb libxcb-shape libxcb-keysyms1 libpulse libsndfile libudev libblkid libgstreamer vlc  libtiff giflib curl openssl opengl libspectre poppler librsvg libraw libxine bullet
-
-
-
-
-
-export PATH=/usr/local/bin:"$PATH"
-export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:"$PKG_CONFIG_PATH"
-export LD_LIBRARY_PATH=/usr/local/lib:"$LD_LIBRARY_PATH"
-Below choose one of the following CFLAGS to use. To ensure your code is compiled with decent optimzations you should also set this up in your environment:
-
-export CFLAGS="-O3 -ffast-math -march=native"
-
-
-#Note the LD_LIBRARY_PATH environment variable is set. You can ensure the system always supports /usr/local/lib by editing /etc/ld.so.conf or adding a file to /etc/ld.so.conf.d and #simply have a line in either file that says:
-
-#/usr/local/lib
-#And remember to run sudo ldconfig tool every time you install a library to ensure caches are updated.
-
-mkdir eflbuild
-cd eflbuild
-git clone https://git.enlightenment.org/core/efl.git
-git clone https://git.enlightenment.org/core/enlightenment.git
-git clone https://git.enlightenment.org/apps/terminology.git
-git clone https://git.enlightenment.org/apps/rage.git
-cd efl
-./autogen.sh
-make
-sudo make install
-sudo ldconfig
-cd ..
-cd enlightenment
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd terminology
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd rage
-meson build
-cd build
-ninja
-sudo ninja install
-sudo ldconfig
-cd ..
-cd ..
-cd ..
-rm -vrf eflbuild 
 
 
