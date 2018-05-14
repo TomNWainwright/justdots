@@ -16,9 +16,37 @@ updatelibs
 git_meson_install git clone https://git.enlightenment.org/core/enlightenment.git enlightenment
 git_meson_install https://git.enlightenment.org/apps/terminology.git terminology
 git_meson_install https://git.enlightenment.org/apps/rage.git rage
+git_make_install https://git.enlightenment.org/apps/econnman.git econnman
+git_make_install https://git.enlightenment.org/apps/ecrire.git ecrire
+git_make_install https://git.enlightenment.org/enlightenment/gadgets/wireless.git wireless
+git_make_install https://git.enlightenment.org/apps/extra.git extra
 
 
+#git_make_install https://git.enlightenment.org/apps/empc.git empc
+#git_make_install https://git.enlightenment.org/apps/emprint.git emprint
+#git_make_install https://git.enlightenment.org/apps/enjoy.git enjoy
+#git_make_install https://git.enlightenment.org/apps/ephoto.git ephoto
+#git_make_install https://git.enlightenment.org/apps/epour.git epour
+#git_make_install https://git.enlightenment.org/apps/equate.git equate
+#git_make_install https://git.enlightenment.org/apps/eruler.git eruler
+#git_make_install https://git.enlightenment.org/apps/espionage.git espionage
+#git_make_install https://git.enlightenment.org/apps/eterm.git eterm
+#git_make_install https://git.enlightenment.org/apps/eve.git eve
+#git_make_install https://git.enlightenment.org/apps/express.git express
 
+# git_make_install https://git.enlightenment.org/bindings/cxx/eflxx.git eflxx
+# git_make_install https://git.enlightenment.org/bindings/elev8.git elev8
+#git_make_install https://git.enlightenment.org/bindings/python/python-efl.git python-efl
+#git_make_install https://git.enlightenment.org/bindings/ruby/ffi-efl.git ffi-efl
+#git_make_install https://git.enlightenment.org/tools/abi_checks.git abi_checks
+#git_make_install https://git.enlightenment.org/tools/clouseau.git clouseau
+#git_make_install https://git.enlightenment.org/tools/edi.git edi
+#git_make_install https://git.enlightenment.org/tools/edje_list.git edje_list
+#git_make_install https://git.enlightenment.org/tools/edje_smart_thumb.git edje_smart_thumb
+#git_make_install https://git.enlightenment.org/tools/eflete.git eflete
+#git_make_install https://git.enlightenment.org/tools/elm-theme-viewer.git elm-theme-viewer
+#git_make_install https://git.enlightenment.org/tools/enventor.git enventor
+#git_make_install https://git.enlightenment.org/tools/erigo.git erigo
 
 
 
